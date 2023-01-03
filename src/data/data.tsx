@@ -55,7 +55,7 @@ export const SectionId = {
   Hero: 'hero',
   About: 'about',
   Contact: 'contact',
-  Portfolio: 'Projects',
+  Portfolio: 'portfolio',
   Resume: 'resume',
   Skills: 'skills',
   Stats: 'stats',
@@ -73,14 +73,14 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm based in Vancouver BC, and I'm a <strong className="text-stone-100">Video Game developer</strong>, currently studying at the <strong className="text-stone-100">British Columbia Institute of technology</strong>, 
+        I'm based in Vancouver BC, and I'm a <strong className="text-stone-100">Video Game developer</strong>, currently studying at the 
+		<strong className="text-stone-100">British Columbia Institute of technology</strong>, 
 		while working on personal game projects.
       </p>
-      /*<p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
-      </p>*/
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        In addition to my studies and projects, I also like to continue writing lore and stories 
+		for a game world, creating graphic designs for either UI's or profiles and videos thumbnails.
+      </p>
     </>
   ),
   actions: [
