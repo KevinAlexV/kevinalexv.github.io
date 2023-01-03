@@ -59,7 +59,7 @@ export const SectionId = {
   Resume: 'resume',
   Skills: 'skills',
   Stats: 'stats',
-  //Testimonials: 'testimonials',
+  Testimonials: 'testimonials',
 } as const;
 
 export type SectionId = typeof SectionId[keyof typeof SectionId];
@@ -83,7 +83,7 @@ export const heroData: Hero = {
       </p>*/
     </>
   ),
-  /*actions: [
+  actions: [
     {
       href: '/assets/resume.pdf',
       text: 'Resume',
@@ -95,7 +95,7 @@ export const heroData: Hero = {
       text: 'Contact',
       primary: false,
     },
-  ],*/
+  ],
 };
 
 /**
