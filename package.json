@@ -1,8 +1,11 @@
 {
   "name": "react-resume-template",
   "version": "2.0.0",
+  "homepage": "https://kevinalexv.github.io/",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "npm run build && gh-pages -d build",
     "build": "yarn compile && yarn next build",
     "clean": "rm -rf build-tsc .next",
     "compile": "yarn run -T tsc --build --verbose",
@@ -19,7 +22,8 @@
     "next": "^12.1.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "ts-pattern": "^4.0.3"
+    "ts-pattern": "^4.0.3",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^12.1.0",
@@ -35,7 +39,7 @@
     "eslint": "^8.10.0",
     "eslint-config-next": "^12.1.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-import": "^2.24.1",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-module-resolver": "^1.4.0",
     "eslint-plugin-monorepo": "^0.3.2",
@@ -45,6 +49,7 @@
     "eslint-plugin-react-native": "^4.0.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "gh-pages": "^4.0.0",
     "postcss": "^8.4.8",
     "postcss-preset-env": "^7.4.2",
     "prettier": "^2.5.1",
