@@ -44,8 +44,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Kevin Vilanova',
+  description: "Programmer, UI Designer, Writer, Video Editor. All passions and active skills used in everyday projects.",
 };
 
 /**
@@ -55,11 +55,11 @@ export const SectionId = {
   Hero: 'hero',
   About: 'about',
   Contact: 'contact',
-  Portfolio: 'portfolio',
+  Portfolio: 'Projects',
   Resume: 'resume',
   Skills: 'skills',
   Stats: 'stats',
-  Testimonials: 'testimonials',
+  //Testimonials: 'testimonials',
 } as const;
 
 export type SectionId = typeof SectionId[keyof typeof SectionId];
@@ -69,22 +69,21 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Kevin Vilanova.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm based in Vancouver BC, and I'm a <strong className="text-stone-100">Video Game developer</strong>, currently studying at the <strong className="text-stone-100">British Columbia Institute of technology</strong>, 
+		while working on personal game projects.
       </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+      /*<p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
         plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
         <strong className="text-stone-100">Vancouver Island</strong>.
-      </p>
+      </p>*/
     </>
   ),
-  actions: [
+  /*actions: [
     {
       href: '/assets/resume.pdf',
       text: 'Resume',
@@ -96,7 +95,7 @@ export const heroData: Hero = {
       text: 'Contact',
       primary: false,
     },
-  ],
+  ],*/
 };
 
 /**
