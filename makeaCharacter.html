@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Make a Character</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="shadowrun.css">
+	<link rel="icon" 
+      type="image/ico" 
+      href="resources/favicon.ico"> 
+	<script src="jquery-3.3.1.js"></script>
+	<script src="characterSheet.js"></script>
+	<script src="interface.js"></script>
+	<script>
+	 $(document).ready(function(){
+			
+            $('a').click(function(){
+                var text = this.textContent;
+                var index = 1;
+                var btns = document.getElementsByClassName('change');
+                for(var i = 0; i < btns.length; i++){
+                    if(text === btns[i].textContent){
+                        index = i;
+                    }
+                }
+                var divs = document.getElementsByClassName('box');
+                for(var i = 0; i < divs.length; i++){
+                    if(i != index){
+                        divs[i].style.display='none';
+                    }
+                }
+                divs[index].style.display='block';
+                document.title = "" + this.textContent;
+			});
+			
+			document.getElementById("savecharacter").onclick = function() {
+				showCharSheetData(document.getElementsByClassName("inputField"));
+			};
+        });
+    </script>
+</head>
+<body>
+	<img src="resources/background.jpg" id="background" alt="background">
+	<header><h1><img src="resources/shadowrunlogo.png" id=logo alt="S">hadowrun</h1></header>
+	
+	<div id="wrapper">
+		<nav id="navcharacter">
+			<ul>
+				<a href="index.html"><li class="highlight parallelogram" id="smallLI">Home</li></a>
+				<a href="#"><li class="highlight parallelogram change" id="mediumLI">Statistics</li></a>
+				<a href="#"><li class="highlight parallelogram change">Description</li></a>
+			</ul>
+		</nav>	
+		<main>
+			<div class="box" style="display:none;">
+				<section>
+					<h3 class="parallelogram" id="personaldata">Personal Data</h3>
+					<img src="resources/combatmage.png" id=archetype alt="Combat Mage">
+					<table id="personaldatatable">
+						<tr>	
+							<th>Name</th>
+							<td><input class="inputField inputText" type="text" name="name" value=""></td>
+						</tr>
+						<tr>
+							<th>Metatype (Race)</th>
+							<td><input class="inputField inputText" type="text" name="metatype" value=""></td>
+						</tr>
+						<tr>
+							<th>Age</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="age" value=""></td>
+						</tr>
+						<tr>
+							<th>Sex(M/F)</th>
+							<td><input class="inputField" type="text" name="gender" value=""></td>
+						</tr>
+						<tr>
+							<th>Height</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="heightFeet" value="0">'<input class="inputField" type="number" pattern="[0-9]+" name="heightInches" value="0">"</td>
+						</tr>
+						<tr>
+							<th>Weight</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="weight" value="0">lbs</td>
+						</tr>
+					</table>
+					
+					<table id="contactstable">
+						<tr>
+							<th rowspan="4">Contacts</th>
+							<th rowspan="2">Talismonger</th>
+							<td>Connection: 3</td>
+						<tr>
+								<td>Loyalty: 3</td>
+						</tr>
+						<tr>
+							<th rowspan="2">Wizgang Leader</th>
+							<td>Connection: 2</td>
+						</tr>
+						<tr>
+							<td>Loyalty: 1</td>
+						</tr>
+					</table>
+					
+					<h3 class="parallelogram" id="attributes">Attributes</h3>
+					<table id="attributestable">
+						<tr>
+							<th>Body</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="body" value="0"></td>
+						</tr>
+						<tr>
+							<th>Agility</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="agility" value="0"></td>
+						</tr>
+						<tr>
+							<th>Reaction</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="reaction" value="0"></td>
+						</tr>
+						<tr>
+							<th>Strength</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="strength" value="0"></td>
+						</tr>
+						<tr>
+							<th>Willpower</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="willpower" value="0"></td>
+						</tr>
+						<tr>
+							<th>Logic</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="logic" value="0"></td>
+						</tr>
+						<tr>
+							<th>Intuition</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="intuition" value="0"></td>
+						</tr>
+						<tr>
+							<th>Charisma</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="charisma" value="0"></td>
+						</tr>
+						<tr>
+							<th>Edge</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="edge" value="0"></td>
+						</tr>
+						<tr>
+							<th>Essence</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="essence" value="0"></td>
+						</tr>
+					</table>
+					
+					<h3 class="parallelogram" id="corecombatinfo">Core Combat Info</h3>
+					<table id="corecombatinfotable">
+						<tr>
+							<th>Initiative</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="initiativeBase" value="0">+ <input class="inputField" type="number" pattern="[0-9]+" name="initiativeD6" value="0">(D6)</td>
+						</tr>
+						<tr>
+							<th>Armor</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="armor" value="0"></td>
+						</tr>
+						<tr>
+							<th>Physical Limit</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="physicalLimit" value="0"></td>
+						</tr>
+						<tr>
+							<th>Mental Limit</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="mentalLimit" value="0"></td>
+						</tr>
+						<tr>
+							<th>Social Limit</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="socialLimit" value="0"></td>
+						</tr>
+						<tr>
+							<th>Walk Rate</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="walkRate" value="0">m</td>
+						</tr>
+						<tr>
+							<th>Run Rate</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="runRate" value="0">m</td>
+						</tr>
+						<tr>
+							<th>Sprint Rate</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="sprintRate" value="0">m</td>
+						</tr>
+					</table>
+					<input id="savecharacter" class="myButton parallelogram" type="submit" value="Save Character">
+				</section>
+				<aside>
+					<h3 class="parallelogram" id="activeSkills">Active Skills</h3>
+					<input id="addSkill" class="myButton parallelogram" type="submit" value="Add Skill">
+					<table id="skillstable">
+						<tr>
+							<th>Diving</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="diving" value="0"></td>
+						</tr>
+						<tr>
+							<th>Free-Fall</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="free-fall" value="0"></td>
+						</tr>
+						<tr>
+							<th>Automatics</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="automatics" value="0"></td>
+						</tr>
+						<tr>
+							<th>Archery</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="archery" value="0"></td>
+						</tr>
+						<tr>
+							<th>Clubs</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="clubs" value="0"></td>
+						</tr>
+						<tr>
+							<th>Blades</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="blades" value="0"></td>
+						</tr>
+						<tr>
+							<th>Escape Artist</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="escapeArtist" value="0"></td>
+						</tr>
+						<tr>
+							<th>Gunnery</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="gunnery" value="0"></td>
+						</tr>
+						<tr>
+							<th>Heavy Weapons</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="heavyWeapons" value="0"></td>
+						</tr>
+						<tr>
+							<th>Gymnastics</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="gymnastics" value="0"></td>
+						</tr>
+						<tr>
+							<th>Locksmith</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="locksmith" value="0"></td>
+						</tr>
+						<tr>
+							<th>Longarms</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="longarms" value="0"></td>
+						</tr>
+						<tr>
+							<th>Pistols</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="pistols" value="0"></td>
+						</tr>
+						<tr>
+							<th>Palming</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="palming" value="0"></td>
+						</tr>
+						<tr>
+							<th>Sneaking</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="sneaking" value="0"></td>
+						</tr>
+						<tr>
+							<th>Throwing Weapon</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="throwingWeapon" value="0"></td>
+						</tr>
+						<tr>
+							<th>Unarmed Combat</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="unarmedCombat" value="0"></td>
+						</tr>
+						<tr>
+							<th>Exotic Melee Weapon (Specific)</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="exoticMeleeWeapon" value="0"></td>
+						</tr>
+						<tr>
+							<th>Exotic Ranged Weapon (Specific)</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="exoticRangedWeapon" value="0"></td>
+						</tr>
+						<tr>
+							<th>Pilot Aerospace</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="pilotAerospace" value="0"></td>
+						</tr>
+						<tr>
+							<th>Pilot Walker</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="pilotWalker" value="0"></td>
+						</tr>
+						<tr>
+							<th>Pilot Aircraft</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="pilotAircraft" value="0"></td>
+						</tr>
+						<tr>
+							<th>Pilot Exotic Vehicle (Specific)</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="pilotExoticVehicle" value="0"></td>
+						</tr>
+						<tr>
+							<th>Pilot Ground Craft</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="pilotGroundCraft" value="0"></td>
+						</tr>
+						<tr>
+							<th>Pilot Watercraft</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="pilotWatercraft" value="0"></td>
+						</tr>
+						<tr>
+							<th>Running</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="running" value="0"></td>
+						</tr>
+						<tr>
+							<th>Swimming</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="swimming" value="0"></td>
+						</tr>
+						<tr>
+							<th>Astral Combat</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="astralCombat" value="0"></td>
+						</tr>
+						<tr>
+							<th>Survival</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="survival" value="0"></td>
+						</tr>
+						<tr>
+							<th>Con</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="con" value="0"></td>
+						</tr>
+						<tr>
+							<th>Instruction</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="instruction" value="0"></td>
+						</tr>
+						<tr>
+							<th>Leadership</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="leadership" value="0"></td>
+						</tr>
+						<tr>
+							<th>Performance</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="performance" value="0"></td>
+						</tr>
+						<tr>
+							<th>Animal Handling</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="animalHandling" value="0"></td>
+						</tr>
+						<tr>
+							<th>Etiquette</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="etiquette" value="0"></td>
+						</tr>
+						<tr>
+							<th>Impersonation</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="impersonation" value="0"></td>
+						</tr>
+						<tr>
+							<th>Negotiation</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="negotiation" value="0"></td>
+						</tr>
+						<tr>
+							<th>Impersonation</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="impersonation" value="0"></td>
+						</tr>
+						<tr>
+							<th>Academic Knowledge</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="academicKnowledge" value="0"></td>
+						</tr>
+						<tr>
+							<th>Arcana</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="arcana" value="0"></td>
+						</tr>
+						<tr>
+							<th>Automative Mechanic</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="automativeMechanic" value="0"></td>
+						</tr>
+						<tr>
+							<th>Chemistry</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="chemistry" value="0"></td>
+						</tr>
+						<tr>
+							<th>Cybertechnology</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="cybertechnology" value="0"></td>
+						</tr>
+						<tr>
+							<th>Demolitions</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="demolitions" value="0"></td>
+						</tr>
+						<tr>
+							<th>First Aid</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="firstAid" value="0"></td>
+						</tr>
+						<tr>
+							<th>Hacking</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="hacking" value="0"></td>
+						</tr>
+						<tr>
+							<th>Medicine</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="medicine" value="0"></td>
+						</tr>
+						<tr>
+							<th>Professional Knowledge</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="professionalKnowledge" value="0"></td>
+						</tr>
+						<tr>
+							<th>Forgery</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="forgery" value="0"></td>
+						</tr>
+						<tr>
+							<th>Aeronautics Mechanics</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="aeronauticsMechanics" value="0"></td>
+						</tr>
+						<tr>
+							<th>Armorer</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="armorer" value="0"></td>
+						</tr>
+						<tr>
+							<th>Biotechnology</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="biotechnology" value="0"></td>
+						</tr>
+						<tr>
+							<th>Computer</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="computer" value="0"></td>
+						</tr>
+						<tr>
+							<th>Cybercombat</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="cybercombat" value="0"></td>
+						</tr>
+						<tr>
+							<th>Electronic Warfare</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="electronicWarfare" value="0"></td>
+						</tr>
+						<tr>
+							<th>Industrial Mechanics</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="industrialMechanics" value="0"></td>
+						</tr>
+						<tr>
+							<th>Hardware</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="hardware" value="0"></td>
+						</tr>
+						<tr>
+							<th>Nautical Mechanics</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="nauticalMechanics" value="0"></td>
+						</tr>
+						<tr>
+							<th>Software</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="software" value="0"></td>
+						</tr>
+						<tr>
+							<th>Artisan</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="artisan" value="0"></td>
+						</tr>
+						<tr>
+							<th>Disguise</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="disguise" value="0"></td>
+						</tr>
+						<tr>
+							<th>Language</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="language" value="0"></td>
+						</tr>
+						<tr>
+							<th>Perception</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="perception" value="0"></td>
+						</tr>
+						<tr>
+							<th>Tracking</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="tracking" value="0"></td>
+						</tr>
+						<tr>
+							<th>Assensing</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="assensing" value="0"></td>
+						</tr>
+						<tr>
+							<th>Navigation</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="navigation" value="0"></td>
+						</tr>
+						<tr>
+							<th>Interests Knowledge</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="interestsKnowledge" value="0"></td>
+						</tr>
+						<tr>
+							<th>Street Knowledge</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="streetKnowledge" value="0"></td>
+						</tr>
+						<tr>
+							<th>Alchemy</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="alchemy" value="0"></td>
+						</tr>
+						<tr>
+							<th>Binding</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="binding" value="0"></td>
+						</tr>
+						<tr>
+							<th>Ritual Spellcasting</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="ritualSpellcasting" value="0"></td>
+						</tr>
+						<tr>
+							<th>Summoning</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="summoning" value="0"></td>
+						</tr>
+						<tr>
+							<th>Disenchanting</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="disenchanting" value="0"></td>
+						</tr>
+						<tr>
+							<th>Banishing</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="banishing" value="0"></td>
+						</tr>
+						<tr>
+							<th>Counterspelling</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="counterspelling" value="0"></td>
+						</tr>
+						<tr>
+							<th>Spellcasting</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="spellcasting" value="0"></td>
+						</tr>
+						<tr>
+							<th>Enchanting</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="enchanting" value="0"></td>
+						</tr>
+						<tr>
+							<th>Compiling</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="compiling" value="0"></td>
+						</tr>
+						<tr>
+							<th>Registering</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="registering" value="0"></td>
+						</tr>
+						<tr>
+							<th>Decompiling</th>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="decompiling" value="0"></td>
+						</tr>
+					</table>
+				</aside>
+				<div style="clear:both;"></div>
+			</div>
+			<div class="box">
+				<img id="profilePicture" src="resources/questionmark.png" alt="ProfilePicture">
+				<h3 class="parallelogram" id="backstory">Back story</h3>
+				<textarea input class="inputField" id="backstoryInput" type="text" name="backstory" value=""></textarea>
+			</div>
+		<footer>
+			The Topps Company, Inc.&copy; has sole ownership of the names, logo, artwork, marks, photographs, sounds, audio, video and/or any proprietary material used in connection with the game Shadowrun&copy;<br>
+		</footer>
+		</main>
+	</div>
+</body>
+</html>
