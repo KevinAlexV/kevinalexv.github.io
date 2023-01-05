@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Rules</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="shadowrun.css">
+	<link rel="icon" 
+      type="image/ico" 
+      href="resources/favicon.ico"> 
+	<script src="jquery-3.3.1.js"></script>
+	<script src="characterSheet.js"></script>
+	<script>
+	 $(document).ready(function(){
+			
+            $('a').click(function(){
+                var text = this.textContent;
+                var index = 1;
+                var btns = document.getElementsByClassName('change');
+                for(var i = 0; i < btns.length; i++){
+                    if(text === btns[i].textContent){
+                        index = i;
+                    }
+                }
+                var divs = document.getElementsByClassName('box');
+                for(var i = 0; i < divs.length; i++){
+                    if(i != index){
+                        divs[i].style.display='none';
+                    }
+                }
+                divs[index].style.display='block';
+                document.title = "" + this.textContent;
+			});
+			
+        });
+    </script>
+</head>
+<body>
+	<img src="resources/background.jpg" id="background" alt="background">
+	<header><h1><img src="resources/shadowrunlogo.png" id=logo alt="S">hadowrun</h1></header>
+	
+	<div id="wrapper">
+		<nav id="navcharacter">
+			<ul>
+				<a href="index.html"><li class="highlight parallelogram" id="smallLI">Home</li></a>
+				<a href="#"><li class="highlight parallelogram change" id="mediumLI">Priority Table</li></a>
+				<a href="#"><li class="highlight parallelogram change">General Information</li></a>
+			</ul>
+		</nav>	
+		<main id="rules">
+			<div class="box" style="display:none;">
+				<img id="prioritytable" src="resources/PriorityTable.png" alt="Priority Table" align="middle">
+				<p>The Priority Table allows you to select one benefit of each tier. So if you have tier A resources, you cannot select another tier A benefit, and must use the other tiers (B-E).</p>
+				<div style="clear:both;"></div>
+			</div>
+			<div class="box">
+				<div id="imgCredits">
+					<img id="D6" src="resources/D6.png" alt="6-sided die (D6)" align="left">
+					<p id="imgCaption"><a href="https://openclipart.org/detail/94489/six-sided-dice-d6">Clipart</a></p>
+				</div>
+				<h3 class="parallelogram twentyper" id="skilltests">Skill Tests</h3>
+				<div id="wrappedText">
+					<p class="characterdesc"> <br/><br/><br/><br/><br/> In a skill test, use the skill of question plus whatever the related attribute is (for example, perception + intuition). 
+					Applicable limits define the max amount of hits you can get for a test and the threshold defines the minimum amount for a test to succeed. </p>
+						
+					<p class="characterdesc">  In an opposition test, the calculations are the same as a skill test except for the threshold, which is whatever amount of hits the opposition got. </p>
+					
+					<p class="characterdesc">  In an extended test, you have a test that takes place over time. You roll for the same test repeatedly with an interval of time passing by each time you roll. You also remove 1 die from your pool on after you finish a roll. 
+					The result is determined at the end of the test, either when you decide to stop or when you run out of dice. Once you stop rolling, use the total sum of your hits rolled from each interval. (For example, you have an interval of a day, and you have
+					5 dice in your pool with a test threshold of 3. So, you roll 3 times, which is 3 days in-game. Each time you roll, you remove a dice from the pool of 5, which leaves you with 2 in your pool at the end of your attempt. Having rolled 1 hit the first day,
+					2 the second, and 0 on the third, you end with a hit sum of 3 and pass the test.) If you roll a glitch, the GM decides what the effect is, but in general, they hinder your efforts (just not cause an immediate failure). Critical glitches immediately fail the test.</p>
+					
+					<p class="characterdesc">  In an teamwork test, you need a group leader which will determine the initial dice pool for the relevant skill. Every other character assisting is an assistant, and should roll the appropriate skill + attribute. For each assistance that scores any hits
+					the leaders relevant limit increases by 1. Each assistant hit adds one die per hit to the leaders dice pool (capped at the leaders relevant skill rating or the highest attribute rating should the test involve two attributes). The leader rolls with the newly formed dice pool.
+					If an assistant rolls a glitch, then they won't be able to modify the leaders dice pool, while if any assistant rolls a critical glitch, the leader must roll without any newly added dice.</p>
+						
+					<p><b>Remember, hits are dice that land on a 5 or 6. So if you have three 6 sided-dice (3 D6) and only one lands on a 5 or 6, then you would have one 'hit'.</b></p>
+				</div>
+			</div>
+		<footer>
+			The Topps Company, Inc.&copy; has sole ownership of the names, logo, artwork, marks, photographs, sounds, audio, video and/or any proprietary material used in connection with the game Shadowrun&copy;<br>
+		</footer>
+		</main>
+	</div>
+</body>
+</html>

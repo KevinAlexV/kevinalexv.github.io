@@ -1,0 +1,550 @@
+
+	body {
+		color:#34086C;
+		font-family:Lucida Console,monospace;
+		font-size:90%;
+		margin:0;}
+	header { 
+		background-color:#42428a;
+		box-shadow: .3em .3em .3em rgba(0, 0, 0, 0.5);
+		height:11em;
+		position:fixed;
+		top:0;
+		width:100%;
+		z-index:10;
+		text-align:center;}
+	main {
+		background-color:#666BAA;
+		box-shadow:.2em 0; /*Right, bottom*/
+		margin:0 18.25em 0 18.25em;
+		position:relative;/*along with position:absolute; in nav, this makes the nav bar show underneath.*/
+		}
+	section {
+		float:left;
+		padding:1em 0 .7em 2em; /*Order is clockwise; ie Top, Right, Bottom, Left*/
+		width:50%;}
+	aside {
+		float:right;
+		padding:1em 0 0 0;
+		width:45%;}
+	h1 {
+		color:#20dfdf;
+		padding-top:.8em;
+		margin:0;
+		font-size:4em;}
+	h2 {
+		text-align:center;
+		padding:0;
+		margin:0;}
+	h3 {
+		padding:.7em;
+		margin: 0 0 0 0;
+		color:#0066cc;}
+	p{
+		text-align:center;
+		padding-bottom:.5em;
+	}
+	table, th ,td{
+		border:1px ridge #34086C;
+		border-collapse:collapse;
+	}
+	table{
+		margin-left:.4em;
+		margin-top:.5em;
+		margin-bottom:1em;
+	}
+	th, td {
+		text-align:left;
+		padding:.4em 1em .1em .4em;
+	}
+	nav li{
+		list-style-type:none;
+		padding:.5em 1em .5em 1em;
+		margin:1em 0 1em 0;
+		}
+	nav ul{
+		overflow:hidden;
+		float:right;
+		padding-left:.5em;}
+	nav {
+		position:fixed;
+		float:left;
+		text-align:center;
+		font-weight:bold;
+		font-size:1.5em;
+		padding-right:.36em;
+		padding-left:2.5em;
+		position:abosolute;
+		}
+	nav a {
+		text-decoration:none;
+		color:blue;
+		transition: color .2s;
+		border:none;}
+	nav li:hover{color:#F00797;}
+	footer {
+		box-shadow:.2em .2em;
+		background-color:#42428a;
+		color:black;
+		font-size:.60em;
+		text-align:center;
+		padding:1em 0 1em 0;
+		font-style:italic;
+		width:100%;
+		clear:both;}
+	video {
+		padding:2em 0 0 2em; 
+		width:80%;}
+	img {
+		height:auto;
+		max-width:100;
+	}
+	audio {
+		padding-bottom:1em;
+		margin:0;
+		width:100%;}
+	input{
+		border:none;
+		border-color:transparent;
+	}
+	input:focus {
+		outline:none;
+	}
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0; /* <-- Apparently some margins are still there even though the spinner is hidden */}
+	input, textarea {
+		background-color : #666BAA; }
+/*Id attributes; Referred to as #'attributeID'*/
+	#wrapper {
+		min-width:900px;
+		/*max-width: 1900px;
+		this is for conventional purposes, but if we're looking to use a seperate CSS for
+		larger resolutions, this may be nessasary. For now, exclude from this element.*/
+		margin-top: 11em;
+		margin-right:auto;
+		margin-left:auto;
+		width:100%;
+		}
+	#background{
+		position:fixed;
+		top:0;
+		left:0;
+		min-width:100%;
+		min-height:100%;
+		z-index:-5;
+		padding-left:0;}
+	#logo{
+		padding-right:0;
+		width:1em;
+		height:1.3em;}
+	#buttonLI{
+		margin-left:3.6em;
+	}
+	#smallLI{
+		margin-left:2.4em;
+	}
+	#mediumLI{
+		margin-left:1.2em;
+	}
+	#navhome {
+		padding-right:3em;
+		padding-left:0;
+		margin-left:.4em;
+	}
+	#navcharacter {
+		margin-left:.27em;
+	}
+	#rules {
+		margin: 0 24.5em 0 24.5em;
+	}
+	#prioritytable {
+		margin:1em 0 0 0;
+		max-width:100%;
+		height:auto;
+	}
+	#skilltests{
+		float:left;
+		clear:right;
+		margin:1.5em 0 0 1.5em;
+	}
+	#backstory{
+		float:left;
+		width:12%;
+		clear:right;
+		margin:1.5em 0 0 .25em;
+	}
+	#D6{
+		padding-right:0;
+		margin:1em .75em .75em 0;
+		float:left;
+		width:inherit;
+		max-width:100%;
+		height:auto;
+		overflow:scroll;
+		clear:right;
+		border:.5em outset lightblue; /*Size - style - color*/
+	}
+	#profilePicture {
+		padding-right:0;
+		margin:1em;
+		max-width:40%;
+		height:auto;
+		float:left;
+		overflow:scroll;
+		clear:right;
+		border:.5em outset lightblue; /*Size - style - color*/
+	}
+	#classdesc {
+		margin:1em 0 0 .5em;
+		padding-top:1em;
+		clear:both;
+	}
+	#backstoryInput{
+		float:right;
+		clear:right;
+		margin-right:1em;
+		margin-top:1em;
+		width:53%;
+		height:34em;
+		resize:none;
+		background-color: #6166a5;
+		border:1px ridge #34086C;
+	}
+	#archetype{
+		clear:left;
+		float:left;
+		width:27%;
+		margin-left:.6em;
+		margin-top:.3em;
+		height:27%;
+	}
+	#personaldata {
+		width:30%; 
+		float:left;
+	}
+	#personaldatatable{
+		float:right; 
+		clear:right; 
+		margin-right:6.8em; 
+		width:50%;
+	}
+	#personaldatatable th{
+		padding-left:.4em;
+		width:50%;
+	}
+	#contactstable {
+		float:left; 
+		margin-right:6.8em; 
+		width:85%;
+	}
+	#attributes{
+		width:25%; 
+		float:left; 
+		clear:right; 
+		clear:left;
+	}
+	#corecombatinfo {
+		width:38%; 
+		float:left; 
+		margin-right:7em;
+	}
+	#attributestable {
+		float:left; 
+		clear:left;
+		width:50%;
+	}
+	#corecombatinfotable{
+		float:left;
+		width:50%;
+	}
+	#skillstable {
+		float:left;
+		margin-left:1em;
+	}
+	#activeSkills{
+		width:40%;
+		float:left;
+	}
+	#savecharacter{
+		clear:left;
+		float:left;
+		font-size:2.5em;
+		font-weight:bold;
+		margin:1em 1.5em 1em 2em;
+		padding:1em 2em 1em 2em;
+		color:blue;
+		transition: background-color .2s;
+	}
+	#savecharacter:hover{
+	background-color:#F00797;
+	}
+	#savecharacter:active{
+		color:#F00797;
+	}
+	#addSkill{
+		float:right;
+		font-size:1em;
+		font-weight:bold;
+		padding:.8em 1.2em .8em 1.2em;
+		color:blue;
+		transition: background-color .2s;
+	}
+	#addSkill:hover{
+	background-color:#F00797;
+	}
+	#addSkill:active{
+		color:#F00797;
+	}
+	#wrappedText{
+		padding-top:.1em;
+	}
+	#imgCredits{
+		width:20em;
+		max-width:100%;
+		height:20em;
+		max-width:100%;
+		float:left;
+		margin:0 2em 5em 0;
+	}
+	#imgCaption{
+	}
+/*Classes; Referred to as .'classname'*/
+	.column{
+		float: left;
+		width:32%;}
+	.box {
+		padding:0 1em 1em 1em;
+	}
+	.description {width:92%;}
+	.twentyper {
+		width:20%;
+	}
+	.characterdesc {
+		padding:0 1em 0 1em;
+	}
+	.inputField{
+		width:20%;
+	}
+	.inputText{
+		width:100%;
+	}
+	.parallelogram{
+		transform: skew(-25deg);
+		background: #6A086D;
+		background-image:url(resources/parallelogrameffect.gif);}
+	.highlight {
+		background-color:#6A086D;
+	}
+	.highlight:hover:after , .highlight:hover:before{
+		width:100%;
+		left:0;
+	}
+	.highlight:after, .highlight:before{
+		content: ''; 
+		background-color: #F00797;
+		position: absolute;
+		top: calc(100%);
+		width: 0;
+		right: 0;
+		height: .15em;
+	}
+	.highlight:after{
+			transition: width .4s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+	}
+	.highlight:before{
+			transition: width .6s cubic-bezier(0.51, 0.18, 0, 0.88) .1s;
+	}
+	.highlight:active{
+		color:#b83d89;
+	}
+	.hightlight:visited{
+		color:blue;
+	}
+/* Tab ----------- */
+/*@media only screen and (max-width : 991px) and (min-width : 768px) {
+    .ur_class:nth-child(4) {
+        display: none;
+    }
+}*/
+/*Mobile Screens (980px or less)*/
+@media screen and (max-width: 980px) {
+    #wrapper{
+		width:100%;
+        display: contents;
+		margin:0;
+		padding:0;
+    }
+	#profilePicture{
+		display:none;
+	}
+	#background{
+		display:none;
+	}
+	#characterbs{
+		clear:left;
+		clear:right;
+		margin:0;
+	}
+	#largeLI{
+		margin: 0 0 0 -1em;
+	}
+	#mediumLI{
+		margin:0 0 0 -1em;
+	}
+	#smallLI{
+		margin:0;
+	}
+	#navhome{
+		padding:0;
+		margin:0 0 0 0;
+	}
+	.twentyper{
+		width:30%;
+		clear:left;
+		clear:right;
+		margin-right:0;
+	}
+	.parallelogram{
+		transform: skew(-25deg);
+		background: #6A086D;
+		background-image:url(resources/parallelogrameffect.gif);}
+	body {
+		color:#34086C;
+		font-family:Lucida Console,monospace;
+		font-size:90%;
+		margin:0;
+		width:100%;}
+	header{ 
+		background-color:#42428a;
+		box-shadow: .3em .3em .3em rgba(0, 0, 0, 0.5);
+		height:6em;
+		position:fixed;
+		top:0;
+		width:100%;
+		z-index:10;
+		text-align:center;}
+	h1{
+		color:#20dfdf;
+		padding-top:.6em;
+		margin:0;
+		font-size:2.2em;
+	}
+	h3{
+
+	}
+	main {
+		margin:0;
+		margin-top:9em;
+		background-color:#666BAA;
+		}
+	nav{
+		margin:3em 2em 0 2em;
+		top:0;
+		z-index:11;
+		position:fixed;
+		height:3em;
+		display:inline;
+		list-style:none;
+		text-align:center;
+		font-weight:bold;
+		font-size:1.5em;
+		position:fixed;
+	}
+	nav ul, nav li{	
+		transform:skew(25deg);	
+		clear:none;
+		float:top;
+		display:inline-block;
+	}
+	nav ul{
+		padding-left:0;
+	}
+	nav li{
+		font-size:.76em;
+		padding:1em 1em 1em 1em;
+	}
+	nav li:hover{color:#F00797;}
+	nav a {
+		text-decoration:none;
+		color:blue;
+		transition: color .2s;
+		border:none;
+	}
+}
+ /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 
+
+ /* MODAL THINGS (background) */
+ .modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+	background-color: #fefefe;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+  } 
