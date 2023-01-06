@@ -16,7 +16,7 @@
 	main {
 		background-color:#666BAA;
 		box-shadow:.2em 0; /*Right, bottom*/
-		margin:0 18.25em 0 18.25em;
+		margin:0 0 0 14.5em;
 		position:relative;/*along with position:absolute; in nav, this makes the nav bar show underneath.*/
 		}
 	section {
@@ -147,6 +147,10 @@
 	}
 	#mediumLI{
 		margin-left:1.2em;
+	}
+	#aboutme{
+		margin-top:1em;
+
 	}
 	#navhome {
 		padding-right:3em;
@@ -398,7 +402,8 @@
 	}
 	#navhome{
 		padding:0;
-		margin:0 0 0 0;
+		margin:2.9em 0 0 0;
+		z-index: -1;
 	}
 	.twentyper{
 		width:30%;
@@ -424,12 +429,14 @@
 		top:0;
 		width:100%;
 		z-index:10;
-		text-align:center;}
+		text-align:center;
+	}
 	h1{
 		color:#20dfdf;
 		padding-top:.6em;
 		margin:0;
 		font-size:2.2em;
+		z-index: 9999;
 	}
 	h3{
 
