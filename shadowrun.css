@@ -345,6 +345,10 @@
 		background-image:url(resources/parallelogrameffect.gif);}
 	.sectionHeader {
 		padding-top:1em;
+		width:20%;
+	}
+	.writing{
+		margin-left:2em;
 	}
 	.highlight {
 		background-color:#6A086D;
