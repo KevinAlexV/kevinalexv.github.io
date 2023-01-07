@@ -343,6 +343,9 @@
 		transform: skew(-25deg);
 		background: #6A086D;
 		background-image:url(resources/parallelogrameffect.gif);}
+	.sectionHeader {
+		padding-top:1em;
+	}
 	.highlight {
 		background-color:#6A086D;
 	}
