@@ -12,7 +12,8 @@
 		top:0;
 		width:100%;
 		z-index:10;
-		text-align:center;}
+		text-align:center;
+	}
 	main {
 		background-color:#666BAA;
 		box-shadow:.2em 0; /*Right, bottom*/
@@ -33,7 +34,6 @@
 		margin:0;
 		font-size:4em;}
 	h2 {
-		text-align:center;
 		padding:0;
 		margin:0;}
 	h3 {
@@ -140,9 +140,9 @@
 		padding-top:.25em;
 	}
 	#logo{
-		padding-right:0;
-		width:1em;
-		height:1.3em;}
+		margin-right:1%;
+		width:1.5em;
+		height:1.5em;}
 	#buttonLI{
 		margin-left:3.6em;
 	}
@@ -311,7 +311,7 @@
 	header{ 
 		background-color:#42428a;
 		box-shadow: .3em .3em .3em rgba(0, 0, 0, 0.5);
-		height:6em;
+		height:9em;
 		position:fixed;
 		top:0;
 		width:100%;
@@ -320,7 +320,7 @@
 	}
 	h1{
 		color:#20dfdf;
-		padding-top:.6em;
+		padding-top:.4em;
 		margin:0;
 		font-size:2.2em;
 		z-index: 9999;
