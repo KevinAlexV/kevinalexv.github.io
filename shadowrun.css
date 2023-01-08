@@ -162,153 +162,6 @@
 		padding-left:0;
 		margin-left:.4em;
 	}
-	#navcharacter {
-		margin-left:.27em;
-	}
-	#rules {
-		margin: 0 24.5em 0 24.5em;
-	}
-	#prioritytable {
-		margin:1em 0 0 0;
-		max-width:100%;
-		height:auto;
-	}
-	#skilltests{
-		float:left;
-		clear:right;
-		margin:1.5em 0 0 1.5em;
-	}
-	#backstory{
-		float:left;
-		width:12%;
-		clear:right;
-		margin:1.5em 0 0 .25em;
-	}
-	#D6{
-		padding-right:0;
-		margin:1em .75em .75em 0;
-		float:left;
-		width:inherit;
-		max-width:100%;
-		height:auto;
-		overflow:scroll;
-		clear:right;
-		border:.5em outset lightblue; /*Size - style - color*/
-	}
-	#profilePicture {
-		padding-right:0;
-		margin:1em;
-		max-width:40%;
-		height:auto;
-		float:left;
-		overflow:scroll;
-		clear:right;
-		border:.5em outset lightblue; /*Size - style - color*/
-	}
-	#classdesc {
-		margin:1em 0 0 .5em;
-		padding-top:1em;
-		clear:both;
-	}
-	#backstoryInput{
-		float:right;
-		clear:right;
-		margin-right:1em;
-		margin-top:1em;
-		width:53%;
-		height:34em;
-		resize:none;
-		background-color: #6166a5;
-		border:1px ridge #34086C;
-	}
-	#archetype{
-		clear:left;
-		float:left;
-		width:27%;
-		margin-left:.6em;
-		margin-top:.3em;
-		height:27%;
-	}
-	#personaldata {
-		width:30%; 
-		float:left;
-	}
-	#personaldatatable{
-		float:right; 
-		clear:right; 
-		margin-right:6.8em; 
-		width:50%;
-	}
-	#personaldatatable th{
-		padding-left:.4em;
-		width:50%;
-	}
-	#contactstable {
-		float:left; 
-		margin-right:6.8em; 
-		width:85%;
-	}
-	#attributes{
-		width:25%; 
-		float:left; 
-		clear:right; 
-		clear:left;
-	}
-	#corecombatinfo {
-		width:38%; 
-		float:left; 
-		margin-right:7em;
-	}
-	#attributestable {
-		float:left; 
-		clear:left;
-		width:50%;
-	}
-	#corecombatinfotable{
-		float:left;
-		width:50%;
-	}
-	#skillstable {
-		float:left;
-		margin-left:1em;
-	}
-	#activeSkills{
-		width:40%;
-		float:left;
-	}
-	#savecharacter{
-		clear:left;
-		float:left;
-		font-size:2.5em;
-		font-weight:bold;
-		margin:1em 1.5em 1em 2em;
-		padding:1em 2em 1em 2em;
-		color:blue;
-		transition: background-color .2s;
-	}
-	#savecharacter:hover{
-	background-color:#F00797;
-	}
-	#savecharacter:active{
-		color:#F00797;
-	}
-	#addSkill{
-		float:right;
-		font-size:1em;
-		font-weight:bold;
-		padding:.8em 1.2em .8em 1.2em;
-		color:blue;
-		transition: background-color .2s;
-	}
-	#addSkill:hover{
-	background-color:#F00797;
-	}
-	#addSkill:active{
-		color:#F00797;
-	}
-	#wrappedText{
-		padding-top:.1em;
-	}
 	#imgCredits{
 		width:20em;
 		max-width:100%;
@@ -319,30 +172,77 @@
 	}
 	#imgCaption{
 	}
+	/*fr is 1 fraction of the available space on the section*/
+	#videoGameGif{
+		margin-left:3em;
+		display:grid;
+		height:10em;
+		grid-template-columns: 1fr 1fr 1fr;
+		column-gap: .4em;
+		/*background-color: #6A086D;*/
+	}
+	#javaGameGif1 {
+		transform: skewX(20deg);
+		width:100%;
+		height: 100%;
+		margin-right:0;
+		overflow:hidden;
+		float:none;
+		background-size:contain;
+		object-fit: contain;
+		background-image: url(resources/PEB_Rendering_Expirement.gif);
+	}
+	#javaGameGif2 {
+		transform: skewX(20deg);
+		width:100%;
+		height: 100%;
+		margin:0;
+		overflow:hidden;
+		background-size:contain;
+		object-fit: contain;
+		background-image: url(resources/PEB_Rendering_Expirement_2.gif);
+		float:none;
+	}
+	#javaGameGif3 {
+		transform: skewX(20deg);
+		width:150%;
+		height: 120%;
+		margin:0;
+		overflow:hidden;
+		float:none;
+		background-size:contain;
+		object-fit: contain;
+		background-image: url(resources/PEB_Rendering_Expirement_3.gif);
+	}
 /*Classes; Referred to as .'classname'*/
 	.column{
 		float: left;
 		width:32%;}
+	.vgGif{
+		transform: skewX(-20deg);
+		width:100%;
+	}
+	.vgGifDiv{
+		transform: skewX(-20deg);
+		width:100%;
+		overflow:hidden;
+		object-fit: contain;
+		display:flex;
+	}
 	.box {
 		padding:0 1em 1em 1em;
 	}
-	.description {width:92%;}
 	.twentyper {
 		width:20%;
 	}
 	.characterdesc {
 		padding:0 1em 0 1em;
 	}
-	.inputField{
-		width:20%;
-	}
-	.inputText{
-		width:100%;
-	}
 	.parallelogram{
 		transform: skew(-25deg);
 		background: #6A086D;
-		background-image:url(resources/parallelogrameffect.gif);}
+		background-image:url(resources/parallelogrameffect.gif);
+	}
 	.sectionHeader {
 		padding-top:1em;
 		width:20%;
