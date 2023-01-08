@@ -191,6 +191,7 @@
 		background-size:contain;
 		object-fit: contain;
 		background-image: url(resources/PEB_Rendering_Expirement.gif);
+		background-repeat: no-repeat;
 	}
 	#javaGameGif2 {
 		transform: skewX(20deg);
@@ -201,6 +202,7 @@
 		background-size:contain;
 		object-fit: contain;
 		background-image: url(resources/PEB_Rendering_Expirement_2.gif);
+		background-repeat: no-repeat;
 		float:none;
 	}
 	#javaGameGif3 {
@@ -213,6 +215,7 @@
 		background-size:contain;
 		object-fit: contain;
 		background-image: url(resources/PEB_Rendering_Expirement_3.gif);
+		background-repeat: no-repeat;
 	}
 /*Classes; Referred to as .'classname'*/
 	.column{
