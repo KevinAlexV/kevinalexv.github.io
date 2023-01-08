@@ -42,7 +42,7 @@
 		color:#0066cc;}
 	p{
 		text-align:center;
-		padding-bottom:.5em;
+		padding-bottom:.1em;
 	}
 	table, th ,td{
 		border:1px ridge #34086C;
@@ -126,7 +126,7 @@
 		margin-right:auto;
 		margin-left:auto;
 		width:100%;
-		}
+	}
 	#background{
 		position:fixed;
 		top:0;
@@ -138,7 +138,6 @@
 	#header
 	{
 		padding-top:.25em;
-
 	}
 	#logo{
 		padding-right:0;
@@ -174,17 +173,12 @@
 	}
 	/*fr is 1 fraction of the available space on the section*/
 	#videoGameGif{
-		margin-left:3em;
+		margin-left:5%;
+		margin-right:5%;
 		display:grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		column-gap: .4em;
 		/*background-color: #6A086D;*/
-	}
-	#javaGameGif1 {
-	}
-	#javaGameGif2 {
-	}
-	#javaGameGif3 {
 	}
 /*Classes; Referred to as .'classname'*/
 	.column{
@@ -194,10 +188,11 @@
 	.vgGif{
 		/*-webkit-mask-image:radial-gradient(parallelogrameffect at 50% 60%, black 50%, rgba(0, 0, 0, 0.6) 50%);*/
  		/*mask-image: radial-gradient(circle at 50% 60%, black 50%, rgba(0, 0, 0, 0.6) 50%);*/
- 		transform: translate(-3em) skewX(-20deg);
+ 		transform: translate(-15%) skewX(-20deg);
 	}
 	.vgGifDiv img{
-		width:130%;
+		width:140%;
+		height:100%;
 	}
 	.vgGifDiv{
 		overflow:hidden;
