@@ -8,6 +8,7 @@
       type="image/ico" 
       href="resources/favicon.ico">
 	<script src="jquery-3.3.1.js"></script>
+	<script src="index.js"></script>
 </head>
 <body>
 	<img src="resources/background.jpg" id="background" alt="background">
@@ -152,7 +153,19 @@
 						<h3 id = "projects" class="parallelogram">My creations</h3>
 					</div>
 					<p>
+						While I've worked on several personal projects, I began producing more presentable projects over the past few years. Here are a few of
+						highlights of those projects:<br>
 					</p>
+					<div id = "projectDescs">
+						<button id = "leftButton" onclick='moveLeft()'>L</button>
+						<div id = "parent">
+							<div id = "child1">One Container</div>
+							<div id = "child2">Two Container</div>
+							<div id = "child3">Three Container</div>
+							<div id = "child4">Four Container</div>
+						</div>
+						<button id = "rightButton" onclick='moveRight()'>R</button>
+					</div>
 
 					<!--<marquee behaviour="scroll" direction="left" scrollamount="30">
 						<div class = "projectElement">
