@@ -180,7 +180,116 @@
 		column-gap: .4em;
 		/*background-color: #6A086D;*/
 	}
+	#skills{
+		display: flow-root;
+		height: 15%;
+		margin:0 2.5em 2em 2.5em;
+	}
+	#skillsBackground{
+		z-index:1;
+		width:100%;
+		transform: skew(25deg);
+		background: #6A086D;
+		position:absolute;
+		background-image:url(resources/parallelogrameffect.gif);
+		-webkit-mask-image: linear-gradient(to left, transparent 1%, black 100%);
+		mask-image: linear-gradient(to left, transparent 1%, black 100%);
+
+	}
+	#expExamples{
+		display:inline-block;
+
+	}
 /*Classes; Referred to as .'classname'*/
+	.skillIcon{
+		float:left;
+		width:9%;
+		height:36%;
+		position:relative;
+		animation: MoveUpDown 3s linear infinite;
+		margin: 1%; /* (100-32*3)/2 */
+	/*	transition: width 1.2s ease-in-out;
+		transition: height 1.2s ease-in-out;
+	}
+	.skillIcon:hover {
+		width: 12%;
+		height:12%;
+	}*/
+	}
+
+	/* Re-order items into rows */
+	.skillIcon:nth-child(3n+1) { order: 1; }
+	.skillIcon:nth-child(3n+2) { order: 2; }
+	.skillIcon:nth-child(3n)   { order: 3; }
+
+	.bubble{
+		float:left;
+		width:50%;
+		-webkit-mask-image: radial-gradient(ellipse 80% 90% at 48% 50%, black 40%, transparent 50%);
+		mask-image: radial-gradient(ellipse 80% 90% at 48% 50%, black 40%, transparent 50%);
+	}
+
+	/* Force new columns */
+	#skills::before,
+	#skills::after {
+		content: "";
+		flex-basis: 100%;
+		width: 0%;
+		order: 2;
+	}
+
+	/*@keyframes MoveUpDown {
+		0%, 100% {
+		bottom: 0;
+		}
+		50% {
+		bottom: 15%;
+		}
+	}*/
+	.rightSkills{
+		/* skew back by negative of parent’s skew so contents is upright */
+		transform: skewX(20deg);
+		margin-left: 3em; /* give margin to push content away from left slanted edge */
+		background: url(resources/PEB_Rendering_Expirement.gif) no-repeat;
+		pointer-events: auto;    /* allow pointer events for the box */
+		width:100%;
+	}
+	.leftSkills{
+		position: absolute;  /* remove from flow so sunset is placed on top */
+		height:50%;
+		background:  url(resources/PEB_Rendering_Expirement_2.gif) no-repeat;
+		/*box-shadow: 0 0 10px rgba(0, 0, 0, .7);*/
+		width:90%;
+	}
+	.slider {
+		/* set initial width */
+		width: 50%;
+
+		/* hide the content that overflows (to allow second box to show through) */
+		overflow: hidden;
+		display: inline-block;
+
+		/* skew container so that it has angled edge, and set up transition */
+		transform: skewX(-20deg);
+		transition: width 1.2s ease-in-out;
+		/* give negative margin to remove gap caused by left hand skew */
+		margin-left: -7%;
+			
+		/* hide pointer events for unseen content */
+		pointer-events: none;
+	}
+	/* make first box bigger on hover, and smaller when hover second box */
+	.slider:hover {
+		width: 760px;
+	}
+			
+	.leftSkills:hover + .slider { 
+		width: 250px;
+	}
+	.box { 
+		height: 10em;
+		border-radius: .5em;
+	}
 	.column{
 		float: left;
 		width:32%;
