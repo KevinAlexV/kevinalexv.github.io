@@ -202,20 +202,33 @@
 	}
 /*Classes; Referred to as .'classname'*/
 	.skillIcon{
-		float:left;
 		width:9%;
-		height:36%;
+		float:left;
 		position:relative;
 		animation: MoveUpDown 3s linear infinite;
 		margin: 1%; /* (100-32*3)/2 */
-	/*	transition: width 1.2s ease-in-out;
-		transition: height 1.2s ease-in-out;
+		transition:all .5s ease-in;
+	}
+	.skillIcon img{
+		width:9%;
+		height:36%;
 	}
 	.skillIcon:hover {
-		width: 12%;
-		height:12%;
-	}*/
+		/*z-index:2;*/
+		transform: scale(1.4);
+		/*border-radius:50%;*/
+		/*box-shadow:inset 5px 10px #F00797;*/
 	}
+/*
+	.skillsText {
+		color: #fff;
+		opacity:0;
+		transition-duration: 0.5s;
+		transition-delay: 0s; 
+	}
+	.skillsText:after {
+		content: 'My most comfortable language, and most used.';
+	}*/
 
 	/* Re-order items into rows */
 	.skillIcon:nth-child(3n+1) { order: 1; }

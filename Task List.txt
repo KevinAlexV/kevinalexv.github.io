@@ -1,9 +1,0 @@
-HTML
--Make a search function that allows users to manually look for specific skills to add to a character sheet as opposed to listing every skill.
--Look into supporting larger resolutions
--Look into mobile support
-
-CSS
--Reference HTML above adapt accordingly
-
-JavaScript
