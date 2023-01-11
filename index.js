@@ -1,7 +1,7 @@
-var currentContainer = 8;
-var numofContainers = 8;
+var currentContainer = 2;
+var numofContainers = 4;
 //Grab first container by ID "child1"
-var childWidth = document.getElementById("child1").offsetWidth;
+//var childWidth = document.getElementById("child1").offsetWidth;
 function checkEdge(event) 
 {
     //Get encapsulating container of all children by ID 'parent'

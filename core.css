@@ -205,7 +205,20 @@
 		position:absolute;
 		width:100%;
 		height:100%;
-
+		display:contents;
+	}
+	#child1{
+		opacity:.5;
+	}
+	#child2{
+		opacity:1;
+	}
+	#child3{
+		opacity:.5;
+		
+	}
+	#child4{
+		opacity:0;
 	}
 /*Classes; Referred to as .'classname'*/
 	.skillIcon{
@@ -241,6 +254,17 @@
 	.skillIcon:nth-child(3n+1) { order: 1; }
 	.skillIcon:nth-child(3n+2) { order: 2; }
 	.skillIcon:nth-child(3n)   { order: 3; }
+
+	.expButton{
+		float:left;
+		position:relative;
+		height:2%;
+		width:5%
+	}
+
+	.expDesc{
+		float:left;
+	}
 
 	.bubble{
 		float:left;
