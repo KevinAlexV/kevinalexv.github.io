@@ -66,7 +66,7 @@ function moveLeft(event)
     
     document.getElementById("child"+(rightContainer)).style.opacity=1;
     document.getElementById("child"+(currentContainer)).style.opacity=.5;
-    document.getElementById("child"+(leftContainer)).style.opacity=0;
+    document.getElementById("child"+(leftContainer)).style.opacity=0.5;
 
 
 }
