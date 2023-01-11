@@ -64,9 +64,9 @@ function moveLeft(event)
     var leftElement = document.getElementById("child"+(leftContainer));
     var centerElement = document.getElementById("child"+(currentContainer));
     
-    document.getElementById("child"+(rightContainer)).style.opacity=1;
+    document.getElementById("child"+(rightContainer)).style.opacity=0;
     document.getElementById("child"+(currentContainer)).style.opacity=.5;
-    document.getElementById("child"+(leftContainer)).style.opacity=0.5;
+    document.getElementById("child"+(leftContainer)).style.opacity=1;
 
 
 }
