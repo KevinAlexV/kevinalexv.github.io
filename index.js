@@ -31,11 +31,14 @@ function moveRight(event)
     rightContainer = currentContainer + 1;
 
     if(rightContainer > numofContainers)
+    {
         rightContainer = 0;
+    }
 
-    if(leftContainer < numofContainers)
+    if(leftContainer < 0)
+    {
         leftContainer = numofContainers;
-    
+    }
 
     var rightElement = document.getElementById("child"+(rightContainer));
     var leftElement = document.getElementById("child"+(leftContainer));
@@ -45,20 +48,37 @@ function moveRight(event)
     document.getElementById("child"+(currentContainer)).style.opacity=.5;
     document.getElementById("child"+(leftContainer)).style.opacity=0;
 
-
+    currentContainer = rightContainer;
 }
 
 function moveLeft(event)
 {
-    leftContainer = currentContainer - 1; 
-    rightContainer = currentContainer + 1;
+    currentLeftContainer = currentContainer - 1; 
+    currentRightContainer = currentContainer + 1;
 
     if(rightContainer > numofContainers)
+    {
         rightContainer = 0;
+    }
 
-    if(leftContainer < numofContainers)
+    if(leftContainer < 0)
+    {    
         leftContainer = numofContainers;
+    }
 
+    nextLeftContainer = leftContainer - 1;
+    nextRightContainer = rightContainer + 1;
+
+    if(nextRightContainer > numofContainers)
+    {
+        nextRightContainer = 0;
+    }
+
+
+    if(nextLeftContainer < 0)
+    {    
+        nextLeftContainer = numofContainers;
+    }
 
     var rightElement = document.getElementById("child"+(rightContainer));
     var leftElement = document.getElementById("child"+(leftContainer));
@@ -68,5 +88,5 @@ function moveLeft(event)
     document.getElementById("child"+(currentContainer)).style.opacity=.5;
     document.getElementById("child"+(leftContainer)).style.opacity=1;
 
-
+    currentContainer = leftContainer;
 }
