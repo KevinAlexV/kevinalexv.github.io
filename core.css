@@ -210,9 +210,11 @@
 	}
 	#farLeftDesc{
 		opacity:0;
+		display:none;
 	}
 	#farRightDesc{
 		opacity:0;
+		display:none;
 	}
 	#leftDesc{
 		opacity:.5;
@@ -270,9 +272,9 @@
 
 	.expDescDisplay{
 		float:left;
+		width:30%;
 	}
 	.expDesc{
-		width:20%;
 		float:left;
 		display:block;
 	}

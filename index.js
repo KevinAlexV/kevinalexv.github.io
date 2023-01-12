@@ -27,6 +27,8 @@ document.addEventListener('readystatechange', event => {
         centerCon = document.getElementById("centerDesc");
         onHoldCon = document.getElementById("onHoldDesc");
 
+        updateContainers(currentContainer);
+
     }
 });
 
@@ -57,39 +59,12 @@ document.addEventListener('readystatechange', event => {
 
 function moveRight(event)
 {
-    var leftContainer = currentContainer - 1; 
-    var rightContainer = currentContainer + 1;
-
-    if(rightContainer > numofContainers)
-    {
-        rightContainer = 0;
-    }
-
-    if(leftContainer < 0)
-    {
-        leftContainer = numofContainers;
-    }
-
-    var rightElement = document.getElementById("child"+(rightContainer));
-    var leftElement = document.getElementById("child"+(leftContainer));
-    var centerElement = document.getElementById("child"+(currentContainer));
-    
-    document.getElementById("child"+(rightContainer)).style.opacity=1;
-    document.getElementById("child"+(currentContainer)).style.opacity=.5;
-    document.getElementById("child"+(leftContainer)).style.opacity=0;
-
-    currentContainer = rightContainer;
+    updateContainers(currentContainer, true);
 }
 
 function moveLeft(event)
 {
-    updateContainers(currentContainer, false)
-
-    
-
-
-
-    
+    updateContainers(currentContainer, false);
 }
 
 function updateContainers(centVal = currentContainer, moveRight = false)
@@ -118,23 +93,47 @@ function updateContainers(centVal = currentContainer, moveRight = false)
     var nextRightElement = document.getElementById("child"+(nextRightContainer));
     var nextLeftElement = document.getElementById("child"+(nextLeftContainer));
 
-    //Containers the elements will move to.
-    var nextMoveCont;
-    var otherMoveCont;
+    //Prep the current Element to be appended.
+    //var fragment = document.createDocumentFragment();
+    //fragment.appendChild(centerElement);
 
     //If we are moving right, append container to right element.
     if(moveRight)
     {
+        currentContainer = currentRightContainer;
+
+        onHoldCon.appendChild(nextRightElement);
+
+        farRightCon.appendChild(rightElement);
+        rightCon.appendChild(centerElement);
+        centerCon.appendChild(leftElement);
+        leftCon.appendChild(nextLeftElement);
+        
+        if(nextLeftContainer - 1 <= 0)
+            nextLeftElement = document.getElementById("child"+(numofContainers));
+        else
+            nextLeftElement = document.getElementById("child"+(nextLeftContainer-1));
+
+        farLeftCon.appendChild(nextLeftElement);
 
     }//Otherwise treat it as a 'left move' and append contr to left element.
     else
     {
         currentContainer = currentLeftContainer;
         
-        //Move div to one of the containers
-        var fragment = document.createDocumentFragment();
-        fragment.appendChild(centerElement);
-        leftCon.appendChild(fragment);
+        onHoldCon.appendChild(nextLeftElement);
+
+        farLeftCon.appendChild(leftElement);
+        leftCon.appendChild(centerElement);
+        centerCon.appendChild(rightElement);
+        rightCon.appendChild(nextRightElement);
+
+        if(nextRightContainer + 1 > numofContainers)
+            nextRightElement = document.getElementById("child"+(1));
+        else
+            nextRightElement = document.getElementById("child"+(nextRightContainer+1));
+
+        farRightCon.appendChild(nextRightElement);
     }
 
     //Animate move 
