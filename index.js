@@ -93,10 +93,6 @@ function updateContainers(centVal = currentContainer, moveRight = false)
     var nextRightElement = document.getElementById("child"+(nextRightContainer));
     var nextLeftElement = document.getElementById("child"+(nextLeftContainer));
 
-    //Prep the current Element to be appended.
-    //var fragment = document.createDocumentFragment();
-    //fragment.appendChild(centerElement);
-
     //If we are moving right, append container to right element.
     if(moveRight)
     {
