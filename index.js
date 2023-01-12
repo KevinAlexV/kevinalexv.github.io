@@ -1,4 +1,4 @@
-var currentContainer = 4;
+var currentContainer;
 var numofContainers = 8;
 
 var farLeftCon;
@@ -6,6 +6,7 @@ var farRightCon;
 var leftCon;
 var rightCon;
 var centerCon;
+
 var onHoldCon;
 
 document.addEventListener('readystatechange', event => { 
@@ -14,6 +15,16 @@ document.addEventListener('readystatechange', event => {
     if (event.target.readyState === "interactive") 
     {   //does same as:  ..addEventListener("DOMContentLoaded"..
         //alert("hi 1");
+        farLeftCon = document.getElementById("farLeftDesc");
+        farRightCon = document.getElementById("farRightDesc");
+        leftCon = document.getElementById("leftDesc");
+        rightCon = document.getElementById("rightDesc");
+        centerCon = document.getElementById("centerDesc");
+        onHoldCon = document.getElementById("onHoldDesc");
+
+        currentContainer = 4;
+
+        updateContainers(currentContainer);
     }
 
     // When window loaded ( external resources are loaded too- `css`,`src`, etc...) 
@@ -26,6 +37,8 @@ document.addEventListener('readystatechange', event => {
         rightCon = document.getElementById("rightDesc");
         centerCon = document.getElementById("centerDesc");
         onHoldCon = document.getElementById("onHoldDesc");
+
+        currentContainer = 4;
 
         updateContainers(currentContainer);
 
@@ -59,16 +72,20 @@ document.addEventListener('readystatechange', event => {
 
 function moveRight(event)
 {
+    console.log(currentContainer);
     updateContainers(currentContainer, true);
 }
 
 function moveLeft(event)
 {
+    console.log(currentContainer);
     updateContainers(currentContainer, false);
 }
 
-function updateContainers(centVal = currentContainer, moveRight = false)
+function updateContainers(centVal, moveRight)
 {
+    //console.log("Current Val: " + currentContainer);
+
     //Gather values of the container we need to swap to.
     var currentLeftContainer = centVal - 1; 
     var currentRightContainer = centVal + 1;
@@ -86,6 +103,8 @@ function updateContainers(centVal = currentContainer, moveRight = false)
     if(nextLeftContainer <= 0)
         nextLeftContainer = numofContainers;
 
+    //console.log("Side Locations (in order): " + nextLeftContainer + " " + currentLeftContainer + " " + currentRightContainer + " " + nextRightContainer);
+
     //Grab the IDs for each container
     var rightElement = document.getElementById("child"+(currentRightContainer));
     var leftElement = document.getElementById("child"+(currentLeftContainer));
@@ -93,12 +112,11 @@ function updateContainers(centVal = currentContainer, moveRight = false)
     var nextRightElement = document.getElementById("child"+(nextRightContainer));
     var nextLeftElement = document.getElementById("child"+(nextLeftContainer));
 
+    cleanUp();
+
     //If we are moving right, append container to right element.
     if(moveRight)
     {
-        currentContainer = currentRightContainer;
-
-        onHoldCon.appendChild(nextRightElement);
 
         farRightCon.appendChild(rightElement);
         rightCon.appendChild(centerElement);
@@ -112,13 +130,11 @@ function updateContainers(centVal = currentContainer, moveRight = false)
 
         farLeftCon.appendChild(nextLeftElement);
 
+        console.log("Right move performed");
+        currentContainer = currentRightContainer;
     }//Otherwise treat it as a 'left move' and append contr to left element.
     else
     {
-        currentContainer = currentLeftContainer;
-        
-        onHoldCon.appendChild(nextLeftElement);
-
         farLeftCon.appendChild(leftElement);
         leftCon.appendChild(centerElement);
         centerCon.appendChild(rightElement);
@@ -130,6 +146,9 @@ function updateContainers(centVal = currentContainer, moveRight = false)
             nextRightElement = document.getElementById("child"+(nextRightContainer+1));
 
         farRightCon.appendChild(nextRightElement);
+
+        console.log("Left move performed");
+        currentContainer = currentLeftContainer;
     }
 
     //Animate move 
@@ -147,4 +166,21 @@ function updateContainers(centVal = currentContainer, moveRight = false)
       let move = pos + 40;
       redBox.style.left = move + 'px'
     }*/
+}
+
+function cleanUp()
+{
+    clean(farRightCon);
+    clean(rightCon);
+    clean(centerCon);
+    clean(leftCon);
+    clean(farLeftCon);
+}
+
+function clean(element)
+{
+    const myNode = element;
+    while (myNode.firstChild) {
+      onHoldCon.appendChild(myNode.lastChild);
+    }
 }
