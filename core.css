@@ -262,8 +262,13 @@
 		width:5%
 	}
 
-	.expDesc{
+	.expDescDisplay{
 		float:left;
+	}
+	.expDesc{
+		width:20%;
+		float:left;
+		display:none;
 	}
 
 	.bubble{
