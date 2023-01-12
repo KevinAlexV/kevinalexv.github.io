@@ -1,16 +1,38 @@
-var currentContainer = 2;
-var numofContainers = 4;
+var currentContainer = 4;
+var numofContainers = 8;
 
-var farLeftCon = document.getElementById("farLeft");
-var farRightCon = document.getElementById("farRight");
-var leftCon = document.getElementById("left");
-var rightCon = document.getElementById("right");
-var centerCon = document.getElementById("center");
-var onHoldCon = document.getElementById("onHold");
+var farLeftCon;
+var farRightCon;
+var leftCon;
+var rightCon;
+var centerCon;
+var onHoldCon;
+
+document.addEventListener('readystatechange', event => { 
+
+    // When HTML/DOM elements are ready:
+    if (event.target.readyState === "interactive") 
+    {   //does same as:  ..addEventListener("DOMContentLoaded"..
+        //alert("hi 1");
+    }
+
+    // When window loaded ( external resources are loaded too- `css`,`src`, etc...) 
+    if (event.target.readyState === "complete") 
+    {
+        
+        farLeftCon = document.getElementById("farLeftDesc");
+        farRightCon = document.getElementById("farRightDesc");
+        leftCon = document.getElementById("leftDesc");
+        rightCon = document.getElementById("rightDesc");
+        centerCon = document.getElementById("centerDesc");
+        onHoldCon = document.getElementById("onHoldDesc");
+
+    }
+});
 
 //Grab first container by ID "child1"
 //var childWidth = document.getElementById("child1").offsetWidth;
-function checkEdge(event) 
+/*function checkEdge(event) 
 {
     //Get encapsulating container of all children by ID 'parent'
     var parent = document.getElementById("parent");
@@ -31,12 +53,12 @@ function checkEdge(event)
         parent.insertBefore((document.getElementById("child"+(currentContainer+2))),parent.firstChild);
         parent.scrollLeft += childWidth;
     }
-}
+}*/
 
 function moveRight(event)
 {
-    leftContainer = currentContainer - 1; 
-    rightContainer = currentContainer + 1;
+    var leftContainer = currentContainer - 1; 
+    var rightContainer = currentContainer + 1;
 
     if(rightContainer > numofContainers)
     {
@@ -61,43 +83,62 @@ function moveRight(event)
 
 function moveLeft(event)
 {
+    updateContainers(currentContainer, false)
+
+    
+
+
+
+    
+}
+
+function updateContainers(centVal = currentContainer, moveRight = false)
+{
     //Gather values of the container we need to swap to.
-    currentLeftContainer = currentContainer - 1; 
-    currentRightContainer = currentContainer + 1;
+    var currentLeftContainer = centVal - 1; 
+    var currentRightContainer = centVal + 1;
 
-    if(rightContainer > numofContainers)
-    {
-        rightContainer = 0;
-    }
-
-    if(leftContainer < 0)
-    {    
-        leftContainer = numofContainers;
-    }
-
-    nextLeftContainer = leftContainer - 1;
-    nextRightContainer = rightContainer + 1;
+    if(currentRightContainer > numofContainers)
+        currentRightContainer = 1;
+    if(currentLeftContainer <= 0)
+        currentLeftContainer = numofContainers;
+    
+    var nextLeftContainer = currentLeftContainer - 1;
+    var nextRightContainer = currentRightContainer + 1;
 
     if(nextRightContainer > numofContainers)
-    {
-        nextRightContainer = 0;
-    }
-
-
-    if(nextLeftContainer < 0)
-    {    
+        nextRightContainer = 1;
+    if(nextLeftContainer <= 0)
         nextLeftContainer = numofContainers;
-    }
 
     //Grab the IDs for each container
-    var rightElement = document.getElementById("child"+(rightContainer));
-    var leftElement = document.getElementById("child"+(leftContainer));
+    var rightElement = document.getElementById("child"+(currentRightContainer));
+    var leftElement = document.getElementById("child"+(currentLeftContainer));
     var centerElement = document.getElementById("child"+(currentContainer));
     var nextRightElement = document.getElementById("child"+(nextRightContainer));
     var nextLeftElement = document.getElementById("child"+(nextLeftContainer));
 
-    currentContainer = leftContainer;
+    //Containers the elements will move to.
+    var nextMoveCont;
+    var otherMoveCont;
 
+    //If we are moving right, append container to right element.
+    if(moveRight)
+    {
+
+    }//Otherwise treat it as a 'left move' and append contr to left element.
+    else
+    {
+        currentContainer = currentLeftContainer;
+        
+        //Move div to one of the containers
+        var fragment = document.createDocumentFragment();
+        fragment.appendChild(centerElement);
+        leftCon.appendChild(fragment);
+    }
+
+    //Animate move 
+    /*
     let left = document.getElementById('left');
     let right = document.getElementById('right');
     let redBox = document.querySelector('.element');
@@ -110,7 +151,5 @@ function moveLeft(event)
       let pos = parseInt(window.getComputedStyle(redBox,null).getPropertyValue("left"), 10);
       let move = pos + 40;
       redBox.style.left = move + 'px'
-    }
-
-
+    }*/
 }

@@ -198,7 +198,8 @@
 
 	}
 	#expExamples{
-		display:inline-block;
+		/*display:inline-block;*/
+		display:none;
 
 	}
 	#projectDescs{
@@ -207,22 +208,22 @@
 		height:100%;
 		display:contents;
 	}
-	#farLeft{
+	#farLeftDesc{
 		opacity:0;
 	}
-	#farRight{
+	#farRightDesc{
 		opacity:0;
 	}
-	#left{
+	#leftDesc{
 		opacity:.5;
 	}
-	#right{
+	#rightDesc{
 		opacity:.5;
 	}
-	#center{
+	#centerDesc{
 		opacity:1;
 	}
-	#onHold{
+	#onHoldDesc{
 		display:none;
 	}
 /*Classes; Referred to as .'classname'*/
@@ -273,6 +274,7 @@
 	.expDesc{
 		width:20%;
 		float:left;
+		display:block;
 	}
 
 	.bubble{
