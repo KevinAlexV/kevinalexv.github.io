@@ -84,7 +84,6 @@ function moveLeft(event)
 
 function updateContainers(centVal, moveRight)
 {
-    //console.log("Current Val: " + currentContainer);
 
     //Gather values of the container we need to swap to.
     var currentLeftContainer = centVal - 1; 
@@ -103,7 +102,7 @@ function updateContainers(centVal, moveRight)
     if(nextLeftContainer <= 0)
         nextLeftContainer = numofContainers;
 
-    //console.log("Side Locations (in order): " + nextLeftContainer + " " + currentLeftContainer + " " + currentRightContainer + " " + nextRightContainer);
+    console.log("Side Locations (in order): " + nextLeftContainer + " " + currentLeftContainer + " "  + centVal + " " + currentRightContainer + " " + nextRightContainer);
 
     //Grab the IDs for each container
     var rightElement = document.getElementById("child"+(currentRightContainer));
@@ -151,7 +150,8 @@ function updateContainers(centVal, moveRight)
         currentContainer = currentLeftContainer;
     }
 
-    //Animate move 
+    //Animate move
+    //https://stackoverflow.com/questions/58559992/how-to-move-element-from-one-point-to-another-with-animation
     /*
     let left = document.getElementById('left');
     let right = document.getElementById('right');
@@ -181,6 +181,7 @@ function clean(element)
 {
     const myNode = element;
     while (myNode.firstChild) {
-      onHoldCon.appendChild(myNode.lastChild);
+        //myNode.removeChild(myNode.lastChild);
+        onHoldCon.appendChild(myNode.lastChild);
     }
 }
