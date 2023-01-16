@@ -81,7 +81,7 @@ function moveLeft(event)
     console.log(currentContainer);
     updateContainers(currentContainer, false);
 }
-
+/*This was in attempt to scroll through elements and have 3 of them displayed at one point. Deprecated for the time being, in case it can be debugged.
 function updateContainers(centVal, moveRight)
 {
 
@@ -165,7 +165,7 @@ function updateContainers(centVal, moveRight)
       let pos = parseInt(window.getComputedStyle(redBox,null).getPropertyValue("left"), 10);
       let move = pos + 40;
       redBox.style.left = move + 'px'
-    }*/
+    }
 }
 
 function cleanUp()
@@ -184,4 +184,4 @@ function clean(element)
         //myNode.removeChild(myNode.lastChild);
         onHoldCon.appendChild(myNode.lastChild);
     }
-}
+}*/
