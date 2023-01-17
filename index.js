@@ -62,7 +62,7 @@ function onStart()
         
         currentContainer = 4;
 
-        centerCon.appendChild(onHoldCon.firstChild);
+        updateContainers(currentContainer);
 
 }
 
@@ -91,19 +91,17 @@ function moveLeft(event)
 
 function updateContainers(newCont, moveRight = false)
 {
-    //var newElement = document.getElementById("child"+(newCont));
-    //var centerElement = document.getElementById("child"+(currentContainer));
+    var newElement = document.getElementById("child"+(newCont));
+    var centerElement = document.getElementById("child"+(currentContainer));
 
-    onHoldCon.appendChild(centerCon.lastChild);
-    centerCon.appendChild(onHoldCon.firstChild);
-
+    
     //const myNode = ;
     //while (centerElement.firstChild) {
         //myNode.removeChild(myNode.lastChild);
         //onHoldCon.appendChild(centerElement.lastChild);
     //}
-    //onHoldCon.appendChild(centerElement);
-    //centerCon.appendChild(newElement);
+    onHoldCon.appendChild(centerElement);
+    centerCon.appendChild(newElement);
 
 }
 /*This was in attempt to scroll through elements and have 3 of them displayed at one point. Deprecated for the time being, in case it can be debugged.
