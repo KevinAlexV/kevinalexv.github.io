@@ -73,6 +73,7 @@ function moveRight(event)
         currentRightContainer = 1;
 
     currentContainer = currentRightContainer;
+
     console.log(currentRightContainer);
     updateContainers(currentRightContainer, true);
 }
@@ -92,7 +93,7 @@ function moveLeft(event)
 function updateContainers(newCont, moveRight = false)
 {
     var newElement = document.getElementById("child"+(newCont));
-    var centerElement = document.getElementById("child"+(currentContainer));
+    const centerCon = document.getElementById("centerDesc");
 
     
     //const myNode = ;
@@ -100,9 +101,11 @@ function updateContainers(newCont, moveRight = false)
         //myNode.removeChild(myNode.lastChild);
         //onHoldCon.appendChild(centerElement.lastChild);
     //}
-    onHoldCon.appendChild(centerElement);
+    while(centerCon.firstChild)
+    {
+        onHoldCon.appendChild(centerCon.firstChild);
+    }
     centerCon.appendChild(newElement);
-
 }
 /*This was in attempt to scroll through elements and have 3 of them displayed at one point. Deprecated for the time being, in case it can be debugged.
 function updateContainers(centVal, moveRight)
