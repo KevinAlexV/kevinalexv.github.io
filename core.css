@@ -263,17 +263,54 @@
 	.skillIcon:nth-child(3n+2) { order: 2; }
 	.skillIcon:nth-child(3n)   { order: 3; }
 
+	#leftButton{
+		width: 0;
+		height: 0;
+		border-top: 25px solid transparent;
+		border-right: 50px solid #6A086D;
+		border-bottom: 25px solid transparent;
+	}
+	#rightButton{
+		width: 0;
+		height: 0;
+		border-top: 25px solid transparent;
+		border-left: 50px solid #6A086D;
+		border-bottom: 25px solid transparent;
+	}
+
+	.expButton {
+		transition: transform .3s ease;
+		background-color:transparent;
+		position: relative;
+	}
+
+	#leftButton{
+		transition: all .3s ease;
+		
+	}
+
+	#rightButton {
+		transition: all .3s ease;
+	}
+	
+	#leftButton:hover{
+		border-left-color: #F00797;
+	}
+	#rightButton:hover{
+		border-right-color: #F00797;
+	}
+
 	.column {
 		float: left;
 	  }
 	  
-	  .left, .right {
-	    width: 25%;
-	  }
-	  
-	  .middle {
-	    width: 50%;
-	  }
+	.left, .right {
+	  width: 25%;
+	}
+	
+	.middle {
+	  width: 50%;
+	}
 
 	.expButton{
 		float:left;
