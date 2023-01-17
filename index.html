@@ -157,7 +157,6 @@
 						highlights of those projects:<br>
 					</p>
 					<div id = "projectDescs">
-						<button id = "leftButton" class = "expButton" onclick="moveLeft()"></button>
 						<div id = "parent">
 							<!--
 							<div id = "farLeftDesc" class = "expDescDisplay"></div>
@@ -167,9 +166,13 @@
 							<div id = "farRightDesc" class = "expDescDisplay"></div>
 							-->
 							<div class = "row">
-								<div id = "leftDesc" class = "column left"></div>
+								<div id = "leftDesc" class = "column left">
+									<button id = "leftButton" class = "expButton" onclick="moveLeft()"></button>
+								</div>
 								<div id = "centerDesc" class = "column middle"></div>
-								<div id = "rightDesc" class = "column right"></div>
+								<div id = "rightDesc" class = "column right">
+									<button id = "rightButton" class = "expButton" onclick="moveRight()"></button>
+								</div>
 							</div>
 
 							<div id = "onHoldDesc">
@@ -300,7 +303,6 @@
 								</div>
 							</div>
 						</div>
-						<button id = "rightButton" class = "expButton" onclick="moveRight()"></button>
 					</div>
 
 					<!--<marquee behaviour="scroll" direction="left" scrollamount="30">
