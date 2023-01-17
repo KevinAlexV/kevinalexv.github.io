@@ -284,14 +284,19 @@
 
 	.column {
 		float: left;
-	  }
-	  
+	}
+
 	.left, .right {
-	  width: 25%;
+		width: 10%;
 	}
 	
 	.middle {
-	  width: 50%;
+		width: 50%;
+	}
+
+	.marqueeImg{
+		width:30%;
+		height:30%;
 	}
 
 	.expButton{
