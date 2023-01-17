@@ -299,6 +299,43 @@
 		height:30%;
 	}
 
+	.marquee {
+		--gap: 1rem;
+		display: flex;
+		overflow: hidden;
+		user-select: none;
+		gap: var(--gap);
+	}
+	/*https://ryanmulligan.dev/blog/css-marquee/*/
+	.marqueeContent {
+		flex-shrink: 0;
+		display: flex;
+		justify-content: space-around;
+		min-width: 100%;
+		gap: var(--gap);
+		animation: scroll 10s linear infinite;
+	}
+	@keyframes scroll {
+		from {
+		  transform: translateX(0);
+		}
+		to {
+		  transform: translateX(calc(-100% - var(--gap)));
+		}
+	  }
+
+	  /* Pause animation when reduced-motion is set */
+	@media (prefers-reduced-motion: reduce) {
+		.marqueeContent {
+		animation-play-state: paused !important;
+		}
+	}
+	
+	/* Enable animation */
+	.enable-animation .marqueeContent {
+		animation: scroll 10s linear infinite;
+	}
+
 	.expButton{
 		float:left;
 		position:relative;
