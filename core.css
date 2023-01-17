@@ -263,6 +263,18 @@
 	.skillIcon:nth-child(3n+2) { order: 2; }
 	.skillIcon:nth-child(3n)   { order: 3; }
 
+	.column {
+		float: left;
+	  }
+	  
+	  .left, .right {
+	    width: 25%;
+	  }
+	  
+	  .middle {
+	    width: 50%;
+	  }
+
 	.expButton{
 		float:left;
 		position:relative;

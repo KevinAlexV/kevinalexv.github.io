@@ -15,32 +15,13 @@ document.addEventListener('readystatechange', event => {
     if (event.target.readyState === "interactive") 
     {   //does same as:  ..addEventListener("DOMContentLoaded"..
         //alert("hi 1");
-        farLeftCon = document.getElementById("farLeftDesc");
-        farRightCon = document.getElementById("farRightDesc");
-        leftCon = document.getElementById("leftDesc");
-        rightCon = document.getElementById("rightDesc");
-        centerCon = document.getElementById("centerDesc");
-        onHoldCon = document.getElementById("onHoldDesc");
-
-        currentContainer = 4;
-
-        updateContainers(currentContainer);
+        onStart();
     }
 
     // When window loaded ( external resources are loaded too- `css`,`src`, etc...) 
     if (event.target.readyState === "complete") 
     {
-        
-        farLeftCon = document.getElementById("farLeftDesc");
-        farRightCon = document.getElementById("farRightDesc");
-        leftCon = document.getElementById("leftDesc");
-        rightCon = document.getElementById("rightDesc");
-        centerCon = document.getElementById("centerDesc");
-        onHoldCon = document.getElementById("onHoldDesc");
-
-        currentContainer = 4;
-
-        updateContainers(currentContainer);
+        onStart();
 
     }
 });
@@ -70,16 +51,60 @@ document.addEventListener('readystatechange', event => {
     }
 }*/
 
+function onStart()
+{
+        //farLeftCon = document.getElementById("farLeftDesc");
+        //farRightCon = document.getElementById("farRightDesc");
+        leftCon = document.getElementById("leftDesc");
+        rightCon = document.getElementById("rightDesc");
+        centerCon = document.getElementById("centerDesc");
+        onHoldCon = document.getElementById("onHoldDesc");
+        
+        currentContainer = 4;
+
+        centerCon.appendChild(onHoldCon.firstChild);
+
+}
+
 function moveRight(event)
 {
-    console.log(currentContainer);
-    updateContainers(currentContainer, true);
+    var currentRightContainer = currentContainer + 1;
+    if(currentRightContainer > numofContainers)
+        currentRightContainer = 1;
+
+    currentContainer = currentRightContainer;
+    console.log(currentRightContainer);
+    updateContainers(currentRightContainer, true);
 }
 
 function moveLeft(event)
 {
-    console.log(currentContainer);
-    updateContainers(currentContainer, false);
+    var currentLeftContainer = currentContainer - 1; 
+    if(currentLeftContainer <= 0)
+        currentLeftContainer = numofContainers;
+
+    currentContainer = currentLeftContainer;
+
+    console.log(currentLeftContainer);
+    updateContainers(currentLeftContainer, false);
+}
+
+function updateContainers(newCont, moveRight = false)
+{
+    //var newElement = document.getElementById("child"+(newCont));
+    //var centerElement = document.getElementById("child"+(currentContainer));
+
+    onHoldCon.appendChild(centerCon.lastChild);
+    centerCon.appendChild(onHoldCon.firstChild);
+
+    //const myNode = ;
+    //while (centerElement.firstChild) {
+        //myNode.removeChild(myNode.lastChild);
+        //onHoldCon.appendChild(centerElement.lastChild);
+    //}
+    //onHoldCon.appendChild(centerElement);
+    //centerCon.appendChild(newElement);
+
 }
 /*This was in attempt to scroll through elements and have 3 of them displayed at one point. Deprecated for the time being, in case it can be debugged.
 function updateContainers(centVal, moveRight)
