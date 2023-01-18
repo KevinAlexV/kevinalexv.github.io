@@ -300,7 +300,8 @@
 	}
 
 	.marquee {
-		--gap: 1rem;
+		--gap: 1em;
+		position: relative;
 		display: flex;
 		overflow: hidden;
 		user-select: none;
