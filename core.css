@@ -294,11 +294,6 @@
 		width: 50%;
 	}
 
-	.marqueeImg{
-		width:30%;
-		height:30%;
-	}
-
 	.marquee {
 		--gap: 1em;
 		position: relative;
@@ -307,7 +302,9 @@
 		user-select: none;
 		gap: var(--gap);
 	}
-	/*https://ryanmulligan.dev/blog/css-marquee/*/
+	/*https://ryanmulligan.dev/blog/css-marquee/
+	https://developer.mozilla.org/en-US/docs/Web/API/Element/animationend_event
+	*/
 	.marqueeContent {
 		flex-shrink: 0;
 		display: flex;
