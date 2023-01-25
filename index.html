@@ -150,7 +150,7 @@
 				</div>
 				<div id = "projects">
 					<div class = "sectionHeader">
-						<h3 id = "projects" class="parallelogram">My creations</h3>
+						<h3 id = "projects" class="parallelogram">My Projects</h3>
 					</div>
 					<p>
 						While I've worked on several personal projects, I began producing more presentable projects over the past few years. Here are a few 
@@ -165,7 +165,7 @@
 							<div id = "rightDesc" class = "expDescDisplay"></div>
 							<div id = "farRightDesc" class = "expDescDisplay"></div>
 							-->
-							<div class = "row">
+							<div class = "row" id = "projectDesc">
 								<div id = "leftDesc" class = "column left">
 									<button id = "leftButton" class = "expButton" onclick="moveLeft()"></button>
 								</div>
@@ -174,9 +174,16 @@
 									<button id = "rightButton" class = "expButton" onclick="moveRight()"></button>
 								</div>
 							</div>
-							<div class = "row">
-								<div id = "childImg1" class = "expDesc marquee">
+							<div class = "row" id = "projectImages">
+								<div id = "childImg1" class = "marquee">
 									<div class = "marqueeContent">
+										<div class = "vgGifDiv"><img src = "resources/Malevolence1.PNG" class = "vgGif" /></div>
+										<div class = "vgGifDiv"><img src = "resources/Malevolence2.PNG" class = "vgGif" /></div>
+										<div class = "vgGifDiv"><img src = "resources/Malevolence3.PNG" class = "vgGif" /></div>
+										<div class = "vgGifDiv"><img src = "resources/Malevolence4.PNG" class = "vgGif" /></div>
+										<div class = "vgGifDiv"><img src = "resources/Malevolence5.PNG" class = "vgGif" /></div>
+									</div>
+									<div aria-hidden="true" class = "marqueeContent">
 										<div class = "vgGifDiv"><img src = "resources/Malevolence1.PNG" class = "vgGif" /></div>
 										<div class = "vgGifDiv"><img src = "resources/Malevolence2.PNG" class = "vgGif" /></div>
 										<div class = "vgGifDiv"><img src = "resources/Malevolence3.PNG" class = "vgGif" /></div>
@@ -193,6 +200,38 @@
 							</marquee>-->
 
 							<div id = "onHoldDesc">
+								<div id = "childImg1" class = "marquee">
+									<div class = "marqueeContent">
+										<div class = "vgGifDiv"><img src = "resources/Malevolence1.PNG" class = "vgGif" /></div>
+										<div class = "vgGifDiv"><img src = "resources/Malevolence2.PNG" class = "vgGif" /></div>
+										<div class = "vgGifDiv"><img src = "resources/Malevolence3.PNG" class = "vgGif" /></div>
+										<div class = "vgGifDiv"><img src = "resources/Malevolence4.PNG" class = "vgGif" /></div>
+										<div class = "vgGifDiv"><img src = "resources/Malevolence5.PNG" class = "vgGif" /></div>
+									</div>
+									<div aria-hidden="true" class = "marqueeContent">
+										<div class = "vgGifDiv"><img src = "resources/Malevolence1.PNG" class = "vgGif" /></div>
+										<div class = "vgGifDiv"><img src = "resources/Malevolence2.PNG" class = "vgGif" /></div>
+										<div class = "vgGifDiv"><img src = "resources/Malevolence3.PNG" class = "vgGif" /></div>
+										<div class = "vgGifDiv"><img src = "resources/Malevolence4.PNG" class = "vgGif" /></div>
+										<div class = "vgGifDiv"><img src = "resources/Malevolence5.PNG" class = "vgGif" /></div>
+									</div>
+								</div>
+
+								<div id = "childImg2" class = "marquee">
+									<div class = "marqueeContent">
+										<div class = "vgGifDiv"><img src = "resources/GhostWalker1.PNG" class = "vgGif" /></div>
+										<div class = "vgGifDiv"><img src = "resources/GhostWalker2.PNG" class = "vgGif" /></div>
+										<div class = "vgGifDiv"><img src = "resources/GhostWalker3.PNG" class = "vgGif" /></div>
+										<div class = "vgGifDiv"><img src = "resources/GhostWalker4.PNG" class = "vgGif" /></div>
+									</div>
+									<div aria-hidden="true" class = "marqueeContent">
+										<div class = "vgGifDiv"><img src = "resources/GhostWalker1.PNG" class = "vgGif" /></div>
+										<div class = "vgGifDiv"><img src = "resources/GhostWalker2.PNG" class = "vgGif" /></div>
+										<div class = "vgGifDiv"><img src = "resources/GhostWalker3.PNG" class = "vgGif" /></div>
+										<div class = "vgGifDiv"><img src = "resources/GhostWalker4.PNG" class = "vgGif" /></div>
+									</div>
+								</div>
+
 								<div id = "child1" class = "expDesc">
 									<table class = "expDesc">
 										<tr>
@@ -224,6 +263,12 @@
 										</tr>
 									</table> 
 								</div>
+
+								<!-- Childs continuance
+								<div id = "childImg3">
+									<div class = "vgGifDiv"><img src = "resources/GhostWalker1.PNG" class = "vgGif" /></div>
+								</div> -->
+
 								<div id = "child3" class = "expDesc">
 									<table>
 										<tr>
@@ -233,7 +278,7 @@
 											<td>
 												A short story following a child, Zach, and his obsession with space. 
 												It follows the theme "Dangers of naivety".
-												I wrote this story to demonstrate a splitting narrative in a quick prototype 
+												I wrote this story to demonstrate a splitting narrative in a quick prototype built in Twine
 												before implementing it in a fully-fledged game. 
 											</td>
 										</tr>
@@ -259,6 +304,12 @@
 										</tr>
 									</table> 
 								</div>
+
+								<!-- Webswing -->
+								<div id = "childImg5">
+									<div class = "vgGifDiv"><img src = "resources/WebSwingPhysics.gif" class = "vgGif" /></div>
+								</div>
+
 								<div id = "child5" class = "expDesc">
 									<table>
 										<tr>

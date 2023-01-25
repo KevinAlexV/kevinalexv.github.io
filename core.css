@@ -282,16 +282,37 @@
 		border-left-color:#c9047e;
 	}
 
+	#leftDesc{
+		padding:1em;
+	}
+
+	#rightDesc{
+		padding:1em;
+	}
+
+	.row{
+		width:100%;
+	}
+
 	.column {
 		float: left;
 	}
 
 	.left, .right {
-		width: 10%;
+		width: 8%;
 	}
 	
 	.middle {
-		width: 50%;
+		width: 75%;
+		height:100%;
+	}
+
+	#projectImages{
+		height:25em;
+	}
+
+	#projectDesc{
+		height:17.5em;
 	}
 
 	.marquee {
@@ -300,7 +321,9 @@
 		display: flex;
 		overflow: hidden;
 		user-select: none;
+		height:100%;
 		gap: var(--gap);
+		float:left;
 	}
 	/*https://ryanmulligan.dev/blog/css-marquee/
 	https://developer.mozilla.org/en-US/docs/Web/API/Element/animationend_event
@@ -311,7 +334,8 @@
 		justify-content: space-around;
 		min-width: 100%;
 		gap: var(--gap);
-		animation: scroll 10s linear infinite;
+		min-width: 100%;
+		animation: scroll 30s linear infinite;
 	}
 	@keyframes scroll {
 		from {
@@ -327,11 +351,6 @@
 		.marqueeContent {
 		animation-play-state: paused !important;
 		}
-	}
-	
-	/* Enable animation */
-	.enable-animation .marqueeContent {
-		animation: scroll 10s linear infinite;
 	}
 
 	.expButton{
