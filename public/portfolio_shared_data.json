@@ -1,17 +1,12 @@
 {
     "basic_info": {
-      "name": "Davina Griss",
-      "titles": [ "Front-end Developer", "Senior Data Engineer", "Dev Team lead", "Mobile App Developer" ],
+      "name": "KevinAlexV",
+      "titles": [ "Front-end Developer", "UX Designer", "Team lead", "Security Administrator", "Customer Support", "Game Developer" ],
       "social": [
         {
           "name": "github",
           "url": "https://github.com",
           "class": "fab fa-github"
-        },
-        {
-          "name": "instagram",
-          "url": "https://www.instagram.com",
-          "class": "fab fa-instagram"
         }
       ],
       "image": "myProfile.jpg"
@@ -29,29 +24,19 @@
           "level": "95"
         },
         {
-          "name": "Angular",
-          "class": "devicon-angularjs-plain",
+          "name": "JavaScript",
+          "class": "devicon-javascript-plain",
           "level": "80"
         },
         {
-          "name": "TypeScript",
-          "class": "devicon-typescript-plain",
-          "level": "90"
+          "name": "Python",
+          "class": "devicon-python-plain",
+          "level": "60"
         },
         {
-          "name": "JavaScript",
-          "class": "devicon-javascript-plain",
+          "name": "C++",
+          "class": "devicon-cplusplus-plain",
           "level": "70"
-        },
-        {
-          "name": "Sass",
-          "class": "devicon-sass-original",
-          "level": "75"
-        },
-        {
-          "name": "Bootstrap",
-          "class": "devicon-bootstrap-plain",
-          "level": "85"
         },
         {
           "name": "C#",
@@ -59,9 +44,49 @@
           "level": "65"
         },
         {
-          "name": "MySql",
-          "class": "devicon-mysql-plain",
+          "name": "Java",
+          "class": "devicon-java-plain",
+          "level": "90"
+        },
+        {
+          "name": "OpenGL",
+          "class": "devicon-opengl-plain",
           "level": "60"
+        },
+        {
+          "name": "Unity",
+          "class": "devicon-unity-original",
+          "level": "60"
+        },
+        {
+          "name": "Unreal 5",
+          "class": "devicon-unrealengine-original",
+          "level": "60"
+        },
+        {
+          "name": "Visual Studio",
+          "class": "devicon-visualstudio-plain",
+          "level": "60"
+        },
+        {
+          "name": "Git",
+          "class": "devicon-git-plain",
+          "level": "60"
+        },
+        {
+          "name": "EnTT",
+          "class": "devicon-entt-plain",
+          "level": "60"
+        },
+        {
+          "name": "Eclipse",
+          "class": "devicon-eclipse-original",
+          "level": "75"
+        },
+        {
+          "name": "O365",
+          "class": "devicon-mirosoftoffice-plain",
+          "level": "85"
         }
       ]
     }
