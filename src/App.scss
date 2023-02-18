@@ -7,6 +7,8 @@ html {
 	-webkit-font-smoothing: antialiased;
 	margin: 0;
 	padding: 0;
+	white-space: pre-line;  
+vertical-align: bottom;
 }
 
 .aligner {
@@ -341,7 +343,7 @@ header h1 {
 }
 
 #portfolio {
-	background: #efe1bd;
+	background: #1F1F1F;
 	padding-bottom: 5%;
 }
 
@@ -377,7 +379,7 @@ header h1 {
 }
 
 #skills {
-	background: #1F1F1F;
+	background: #efe1bd;
 	min-height: 200px;
 	width: 100%;
 	overflow: hidden;
