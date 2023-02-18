@@ -107,10 +107,10 @@
         "startDate": "2022",
         "description": "A narrative-driven game built in Unity with a team of 5. I wrote the story, designed most of the levels and acted as project lead to ensure components connected and flowed together. ",
         "images": [
-          "images/portfolio/Ghostwalker/GhostWalker1.png",
-          "images/portfolio/Ghostwalker/GhostWalker2.png",
-          "images/portfolio/Ghostwalker/GhostWalker3.png",
-          "images/portfolio/Ghostwalker/GhostWalker4.png"
+          "images/portfolio/Ghostwalker/GhostWalker1.PNG",
+          "images/portfolio/Ghostwalker/GhostWalker2.PNG",
+          "images/portfolio/Ghostwalker/GhostWalker3.PNG",
+          "images/portfolio/Ghostwalker/GhostWalker4.PNG"
         ],
         "url": "https://github.com/KevinAlexV/GhostWalker",
         "technologies": [
@@ -133,11 +133,11 @@
         "startDate": "2021",
         "description": "A turn-based card game built with a team of 4 in Unity. I designed the UI, wrote the story and acted as a playtester and bug-fixer for our core systems, without a specific understanding of each component.",
         "images": [
-          "images/portfolio/Malevolence/Malevolence1.png",
-          "images/portfolio/Malevolence/Malevolence2.png",
-          "images/portfolio/Malevolence/Malevolence3.png",
-          "images/portfolio/Malevolence/Malevolence4.png",
-          "images/portfolio/Malevolence/Malevolence5.png"
+          "images/portfolio/Malevolence/Malevolence1.PNG",
+          "images/portfolio/Malevolence/Malevolence2.PNG",
+          "images/portfolio/Malevolence/Malevolence3.PNG",
+          "images/portfolio/Malevolence/Malevolence4.PNG",
+          "images/portfolio/Malevolence/Malevolence5.PNG"
         ],
         "url": "https://github.com/KevinAlexV/theMalevolence",
         "technologies": [
