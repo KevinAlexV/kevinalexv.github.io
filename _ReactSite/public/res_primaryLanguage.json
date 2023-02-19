@@ -87,7 +87,7 @@
         "description": "A system that allows for the indexing and searching of several world coordinates from several databases. The program is interacted with via a script file, and is optimized for searches in large datasets. Using quick file parsing and efficient memory management.\n\nKey data structures involved include Quad trees, Hash Tables, regex, and buffer pools.",
         "images": [
           "images/portfolio/GIS/QuadTree1.png",
-          "images/portfolio/GIS/QuadTree2.png",
+          "images/portfolio/GIS/QuadTree2.PNG",
           "images/portfolio/GIS/QuadTree3.png",
           "images/portfolio/GIS/QuadTree4.png",
           "images/portfolio/GIS/QuadTree5.png",
