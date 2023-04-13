@@ -17,13 +17,13 @@
       {
         "title": "Musical AI",
         "startDate": "2023",
-        "description": "This is a project revolving around the concept of AI changing their behaviour based on the tempo and rythym of the music playing in the background. The hope is to explore the many applications of an AI designed in this way, whether it be for a game mechanic or to help developers adjust the tone of their game by simply changing the music. This is being built in Unreal 5 with Blueprints and C++, and will be completed in April 2023.",
+        "description": "This is a project revolving around the concept of AI changing their behaviour based on the tempo and rythym of the music playing in the background. The hope is to explore the many applications of an AI designed in this way, whether it be for a game mechanic or to help developers adjust the tone of their game by simply changing the music. This is being built in Unreal 5 with Blueprints and C++, and contains a short demonstration to highlight how music can affect a game.",
         "images": [
           "images/portfolio/MusicalAI/mai1.png",
           "images/portfolio/MusicalAI/mai2.png",
           "images/portfolio/MusicalAI/mai3.png"
         ],
-        "url": "https://github.com",
+        "url": "https://github.com/KevinAlexV/MusicalAI",
         "technologies": [
           {
             "name": "Unreal 5",
