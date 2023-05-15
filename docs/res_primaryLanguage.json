@@ -19,6 +19,7 @@
         "startDate": "C++",
         "description": "This is a project revolving around the concept of AI changing their behaviour based on the tempo and rhythm of the music playing in the background. The hope is to explore the many applications of an AI designed in this way, whether it be for a game mechanic or to help developers adjust the tone of their game by simply changing the music. This is being built in Unreal 5 with Blueprints and C++, and contains a short demonstration to highlight how music can affect a game.",
         "images": [
+          "images/portfolio/MusicalAI/Animation.gif",
           "images/portfolio/MusicalAI/mai1.png",
           "images/portfolio/MusicalAI/mai2.png",
           "images/portfolio/MusicalAI/mai3.png",
@@ -136,10 +137,10 @@
         "startDate": "C#",
         "description": "A narrative-driven game built in Unity with a team of 5. I wrote the story, designed most of the levels and acted as project lead to ensure components connected and flowed together. ",
         "images": [
-          "images/portfolio/Ghostwalker/GhostWalker1.PNG",
-          "images/portfolio/Ghostwalker/GhostWalker2.PNG",
-          "images/portfolio/Ghostwalker/GhostWalker3.PNG",
-          "images/portfolio/Ghostwalker/GhostWalker4.PNG"
+          "images/portfolio/Ghostwalker/GhostWalker1.png",
+          "images/portfolio/Ghostwalker/GhostWalker2.png",
+          "images/portfolio/Ghostwalker/GhostWalker3.png",
+          "images/portfolio/Ghostwalker/GhostWalker4.png"
         ],
         "url": "https://github.com/KevinAlexV/GhostWalker",
         "technologies": [
@@ -162,11 +163,12 @@
         "startDate": "C#",
         "description": "A turn-based card game built with a team of 4 in Unity. I designed the UI, wrote the story and acted as a playtester and bug-fixer for our core systems, without a specific understanding of each component.",
         "images": [
-          "images/portfolio/Malevolence/Malevolence1.PNG",
-          "images/portfolio/Malevolence/Malevolence2.PNG",
-          "images/portfolio/Malevolence/Malevolence3.PNG",
-          "images/portfolio/Malevolence/Malevolence4.PNG",
-          "images/portfolio/Malevolence/Malevolence5.PNG"
+          "images/portfolio/Malevolence/Malevolence.gif",
+          "images/portfolio/Malevolence/Malevolence1.png",
+          "images/portfolio/Malevolence/Malevolence2.png",
+          "images/portfolio/Malevolence/Malevolence3.png",
+          "images/portfolio/Malevolence/Malevolence4.png",
+          "images/portfolio/Malevolence/Malevolence5.png"
         ],
         "url": "https://github.com/KevinAlexV/theMalevolence",
         "technologies": [
