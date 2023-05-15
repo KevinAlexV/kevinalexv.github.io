@@ -1,0 +1,17 @@
+npm start project and customize it.
+Deploy on github-pages using npm run deploy command.
+⚠️ Note that:
+- if you want to have portfolio on different repository than `{username}.github.io`, 
+set `homepage` in `package.json` to `https://{username}.github.io/{repository-name}/` 
+before deploying portfolio.
+- if you want to run it locally with npm run start, make sure that you have edited 
+homepage property or json data won't load.
+
+Use npm start
+for testing/debugging
+
+Modify public/res_primaryLang.json for page details. 
+Porfolioshareddata contains skills and header information.
+
+Components/.json seems to contain the template for building each section, which can be modified
+accordingly.
