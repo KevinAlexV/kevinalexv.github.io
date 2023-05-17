@@ -107,16 +107,16 @@
         ]
       },
       {
-        "title": "FireSide Game Jam",
+        "title": "Utorial",
         "startDate": "C#",
-        "description": "This game was created within a week in a team of 4. I helped write the gameplay, AI, and narration systems in order to make an auto-scroller platformer where AI characters must be guided to the end of each level. ",
+        "description": "This game was created for the 2023 Fireside Game Jam within a week in a team of 4. I helped write the gameplay, AI, and narration systems in order to make an auto-scroller platformer where AI characters must be guided to the end of each level. \n\nYou can find the Game Jam here: https://itch.io/jam/fireside-jam-2023 \n\nHere is the rating page: https://itch.io/jam/fireside-jam-2023/rate/2069692 \n\nYou can find a build here: https://evanohirabe.itch.io/utorial",
         "images": [
           "images/portfolio/FiresideJam/Animation.gif",
           "images/portfolio/FiresideJam/fireside1.PNG",
           "images/portfolio/FiresideJam/fireside2.PNG",
           "images/portfolio/FiresideJam/fireside3.PNG"
         ],
-        "url": "https://github.com/Hevano/FireSideJam",
+        "url": "https://evanohirabe.itch.io/utorial",
         "technologies": [
           {
             "name": "Unity",
