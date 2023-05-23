@@ -19,32 +19,63 @@ class Projects extends Component {
     if (this.props.resumeProjects && this.props.resumeBasicInfo) {
       var sectionName = this.props.resumeBasicInfo.section_name.projects;
       var projectDesc = this.props.resumeBasicInfo.projects_description;
-      var projects = this.props.resumeProjects.map(function (projects) {
-        return (
-          <div
-            className="col-sm-12 col-md-6 col-lg-4"
-            key={projects.title}
-            style={{ cursor: "pointer" }}
-          >
-            <span className="portfolio-item d-block">
-              <div className="foto" onClick={() => detailsModalShow(projects)}>
-                <div>
-                  <img
-                    src={projects.images[0]}
-                    alt="projectImages"
-                    height="230"
-                    style={{marginBottom: 0, paddingBottom: 0, position: 'relative'}}
-                  />
-                  <span className="project-date">{projects.startDate}</span>
-                  <br />
-                  <p className="project-title-settings mt-3">
-                    {projects.title}
-                  </p>
+      var projects = this.props.resumeProjects.map(function (projects) 
+      {
+        var splitString = projects.images[0].split(".");
+        if(splitString[splitString.length - 1] == "mp4")
+        {
+          return (
+            <div
+              className="col-sm-12 col-md-6 col-lg-4"
+              key={projects.title}
+              style={{ cursor: "pointer" }}
+            >
+              <span className="portfolio-item d-block">
+                <div className="foto" onClick={() => detailsModalShow(projects)}>
+                  <div>
+                    <video width="100%" controls autoPlay={true} muted={true} loop={true} style={{"margin-bottom": 0, "padding-bottom": 0, "position": 'relative'}}>
+                      <source src = {projects.images[0]} type="video/mp4"/>
+                      Your browser does not support the video tag.
+                    </video>
+                    <span className="project-date">{projects.startDate}</span>
+                    <br />
+                    <p className="project-title-settings mt-3">
+                      {projects.title}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </span>
-          </div>
-        );
+              </span>
+            </div>
+          );
+        }
+        else{
+          return (
+            <div
+              className="col-sm-12 col-md-6 col-lg-4"
+              key={projects.title}
+              style={{ cursor: "pointer" }}
+            >
+              <span className="portfolio-item d-block">
+                <div className="foto" onClick={() => detailsModalShow(projects)}>
+                  <div>
+                    <img
+                      src={projects.images[0]}
+                      alt="projectImages"
+                      height="230"
+                      style={{marginBottom: 0, paddingBottom: 0, position: 'relative'}}
+                    />
+                    
+                    <span className="project-date">{projects.startDate}</span>
+                    <br />
+                    <p className="project-title-settings mt-3">
+                      {projects.title}
+                    </p>
+                  </div>
+                </div>
+              </span>
+            </div>
+          );
+        }
       });
     }
 
