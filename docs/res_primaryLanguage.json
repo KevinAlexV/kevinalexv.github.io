@@ -19,6 +19,7 @@
         "startDate": "C++",
         "description": "This is a project revolving around the concept of AI changing their behaviour based on the tempo and rhythm of the music playing in the background. The hope is to explore the many applications of an AI designed in this way, whether it be for a game mechanic or to help developers adjust the tone of their game by simply changing the music. This is being built in Unreal 5 with Blueprints and C++, and contains a short demonstration to highlight how music can affect a game.",
         "images": [
+          "images/portfolio/MusicalAI/MAI.mp4",
           "images/portfolio/MusicalAI/Animation.gif",
           "images/portfolio/MusicalAI/mai1.png",
           "images/portfolio/MusicalAI/mai2.png",
@@ -44,6 +45,7 @@
         "startDate": "C++",
         "description": "A game, MonoChrome, powered by a custom 2D engine built from the ground up, with no previous experience working on engines. The BlueDemise engine was built in a team of 12 over the course of 3 months. It is based on an Entity Component System architecture, and utilizes the EnTT library for that purpose. I worked on the rendering pipeline (including animation and general object rendering via OpenGL) and resource management aspects of this engine.",
         "images": [
+          "images/portfolio/bluedemise/BlueDemise.mp4",
           "images/portfolio/bluedemise/bluedemise.png"
         ],
         "url": "https://github.com/BTechTeamRed/GameEngine",
@@ -163,7 +165,7 @@
         "startDate": "C#",
         "description": "A turn-based card game built with a team of 4 in Unity. I designed the UI, wrote the story and acted as a playtester and bug-fixer for our core systems, without a specific understanding of each component.",
         "images": [
-          "images/portfolio/Malevolence/Malevolence.gif",
+          "images/portfolio/Malevolence/Malevolence.mp4",
           "images/portfolio/Malevolence/Malevolence1.png",
           "images/portfolio/Malevolence/Malevolence2.png",
           "images/portfolio/Malevolence/Malevolence3.png",
