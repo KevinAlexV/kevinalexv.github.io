@@ -33,7 +33,7 @@ class Projects extends Component {
               <span className="portfolio-item d-block">
                 <div className="foto" onClick={() => detailsModalShow(projects)}>
                   <div>
-                    <video width="100%" controls autoPlay={true} muted={true} loop={true} style={{"margin-bottom": 0, "padding-bottom": 0, "position": 'relative'}}>
+                    <video width="100%" controls autoPlay={false} muted={true} loop={true} style={{"margin-bottom": 0, "padding-bottom": 0, "position": 'relative'}}>
                       <source src = {projects.images[0]} type="video/mp4"/>
                       Your browser does not support the video tag.
                     </video>
