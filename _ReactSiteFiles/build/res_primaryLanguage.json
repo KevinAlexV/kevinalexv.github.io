@@ -65,6 +65,30 @@
       ]
     },
     {
+      "title": "Welcome CROW",
+      "startDate": "C++",
+      "description": "An Unreal Engine 5 game created for the Epic MegaJam over a week in a team of 5. I was largely responsible for the AI system (using Unreal's behavior trees to develop it), core gameplay logic, map design, lighting, and cinematics (including the text-based cutscenes and camera pan in the intro). I also used the Niagara system to develop a few different particle systems seen throughout the game, such as the fog that increases in density during gameplay and the text that pops up from the bottom of the screen when typing. Aside from those responsibilities, I also helped debug and assist our other developers to help their learning and/or just give a second pair of eyes to walk through code and understand why it may not work.",
+      "images": [
+        "images/portfolio/welcomeCrow/WelcomeCROW.mp4",
+        "images/portfolio/welcomeCrow/crow1.png",
+        "images/portfolio/welcomeCrow/crow2.png",
+        "images/portfolio/welcomeCrow/crow3.png",
+        "images/portfolio/welcomeCrow/crow4.png",
+        "images/portfolio/welcomeCrow/crow5.png"
+      ],
+      "url": "https://jake-pauls.itch.io/welcome-crow",
+      "technologies": [
+        {
+          "name": "Unreal 5",
+          "class": "devicon-unrealengine-original"
+        },
+        {
+          "name": "C++",
+          "class": "devicon-cplusplus-plain"
+        }
+      ]
+    },
+    {
       "title": "Cat out of Hell",
       "startDate": "C++",
       "description": "A bullet-hell game made over the course of 2 days for the 2023 Alberta Game Jam done in a team of 10 (6 artists, 4 programmers). I was a gameplay programmer, and focused on the logic for projectiles and some on screen UI logic. I  also assisted with general debugging and code cleanup for other team members and just helped where ever I could. ",

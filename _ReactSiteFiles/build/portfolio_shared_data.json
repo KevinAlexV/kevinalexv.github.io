@@ -64,6 +64,21 @@
           "level": "60"
         },
         {
+          "name": "Adobe Photoshop",
+          "class": "devicon-photoshop-plain",
+          "level": "60"
+        },
+        {
+          "name": "Blender",
+          "class": "devicon-blender-original",
+          "level": "60"
+        },
+        {
+          "name": "Trello",
+          "class": "devicon-trello-plain",
+          "level": "60"
+        },
+        {
           "name": "Visual Studio",
           "class": "devicon-visualstudio-plain",
           "level": "60"
@@ -72,6 +87,11 @@
           "name": "Git",
           "class": "devicon-git-plain",
           "level": "60"
+        },
+        {
+          "name": "Perforce",
+          "class": "devicon-perforce-plain",
+          "level": "85"
         },
         {
           "name": "EnTT",
