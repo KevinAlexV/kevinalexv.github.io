@@ -26,9 +26,11 @@ vertical-align: bottom;
 	font-size: 250%;
 }
 
+
 .header-icon {
-	height: 150px;
-	width: 150px;
+	content: url("./resources/myProfile2.png");
+	height: 250px;
+	width: 250px;
 }
 
 header {
@@ -40,12 +42,11 @@ header {
 	-webkit-background-size: cover;
 	text-align: center;
 	overflow: hidden;
-	background-color: #e9d5a1;
+	background-color: #e64862;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	padding-top: 150px;
 	padding-bottom: 0;
 }
 
@@ -72,13 +73,6 @@ header {
 	width: 100px;
 	margin: 5px 0 5px 0;
 	border-radius: 8px;
-}
-
-.language {
-	font-size: 25px;
-	background-color: #e9d5a1;
-	padding-bottom: 10px;
-	padding-top: 80px;
 }
 
 header h1 {
@@ -110,8 +104,15 @@ header h1 {
 }
 
 #about {
-	background: #efe1bd;
+	background: #b91b35;
 	overflow: hidden;
+	h1 span {
+		color: white;
+	}
+	.card {
+		background: #EA3C5A;
+		color: white;
+	}
 }
 
 #about h1 {
@@ -129,7 +130,7 @@ header h1 {
 }
 
 .foto div {
-	background: #ffffff;
+	background: #E41D34;
 	display: inline-block;
 	margin: 0 auto 5% auto;
 	padding: 10px 10px 5px;
@@ -178,7 +179,7 @@ header h1 {
 }
 
 .polaroid span {
-	background: #ffffff;
+	background: #8C8C8C;
 	display: inline-block;
 	margin: 50px 50px 30px;
 	padding: 15px;
@@ -265,9 +266,11 @@ header h1 {
 	}
 }
 
+//FOR POP UP NODES WITHIN PORTFOLIO
 .modal-inside .modal-content {
-	background: white;
-}
+	background: #b91b35;
+	color: white;
+ }
 
 .bars {
 	width: 95%;
@@ -319,8 +322,8 @@ header h1 {
 }
 
 .close-icon {
-	color: black;
-	font-weight: lighter !important;
+   color: white;
+   font-weight: lighter !important;
 }
 
 .modal-description {
@@ -342,8 +345,20 @@ header h1 {
 	color: black !important;
 }
 
+.parallelogram{
+	transform: skew(-25deg);
+	background: #E41D34;
+	padding-left: 1em;
+	padding-right: 1em;
+	margin-left:auto;
+	margin-right:auto;
+	width: max-content;
+	background-image:url("./resources/Parallelogrameffect.gif");
+}
+
+// RELEVANT BACKGROUND COLOR
 #portfolio {
-	background: #efe1bd;
+	background: #e64862;
 	padding-bottom: 5%;
 }
 
@@ -379,7 +394,7 @@ header h1 {
 }
 
 #skills {
-	background: #494949;
+	background: #C6243F;
 	min-height: 200px;
 	width: 100%;
 	overflow: hidden;
@@ -389,6 +404,7 @@ header h1 {
 .section-title {
 	padding-top: 3%;
 	padding-bottom: 3%;
+	height:10%;
 	font: 18px/24px 'opensans-bold', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 3px;
@@ -427,4 +443,38 @@ footer a:focus {
 .social-links {
 	margin-top: 50px;
 	font-size: 22px;
+}
+
+
+
+//My custom shit
+.vgGif{
+	/*-webkit-mask-image:radial-gradient(parallelogrameffect at 50% 60%, black 50%, rgba(0, 0, 0, 0.6) 50%);*/
+	 /*mask-image: radial-gradient(circle at 50% 60%, black 50%, rgba(0, 0, 0, 0.6) 50%);*/
+	 transform: translate(-15%) skewX(-20deg);
+}
+.vgGifDiv span{
+	width:140%;
+	height:100%;
+}
+.vgGifDiv{
+	overflow:hidden;
+	transform: skewX(20deg);
+}
+#vgGif1 {
+	content:url("./resources/PEB_Rendering_Expirement.gif");
+}
+#vgGif2 {
+	content:url("./resources/PEB_Rendering_Expirement_2.gif");
+}
+#vgGif3 {
+	content:url("./resources/PEB_Rendering_Expirement_3.gif");
+}
+#videoGameGif{
+	margin-left:5%;
+	margin-right:5%;
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: .4em;
+	/*background-color: #6A086D;*/
 }
