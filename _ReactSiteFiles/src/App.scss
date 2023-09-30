@@ -2,13 +2,20 @@
 @import 'scss/themes/theme-light.scss';
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
 
+$panelColor: #EA3C5A;
+$header: #e64862;
+$pageBGColor: #C6243F;
+$titleColor: #E41D34;
+$highlightColor: #ff70c8;
+$mainTextColor:white;
+
 html {
 	font-size: 100%;
 	-webkit-font-smoothing: antialiased;
 	margin: 0;
 	padding: 0;
 	white-space: pre-line;  
-vertical-align: bottom;
+	vertical-align: bottom;
 }
 
 .aligner {
@@ -42,7 +49,7 @@ header {
 	-webkit-background-size: cover;
 	text-align: center;
 	overflow: hidden;
-	background-color: #e64862;
+	background-color: $header;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -75,11 +82,11 @@ header {
 	border-radius: 8px;
 }
 
+//For my name
 header h1 {
 	font-size: 400%;
 	text-align: center;
 	font-weight: 600 !important;
-	color: #353239;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	margin: 0 auto 18px auto;
 	width: 100%;
@@ -104,14 +111,14 @@ header h1 {
 }
 
 #about {
-	background: #b91b35;
+	background: $pageBGColor;
 	overflow: hidden;
 	h1 span {
-		color: white;
+		color: $mainTextColor;
 	}
 	.card {
-		background: #EA3C5A;
-		color: white;
+		background: $panelColor;
+		color: $mainTextColor;
 	}
 }
 
@@ -129,8 +136,9 @@ header h1 {
 	width: 100%;
 }
 
+//Projects panels
 .foto div {
-	background: #E41D34;
+	background: $panelColor;
 	display: inline-block;
 	margin: 0 auto 5% auto;
 	padding: 10px 10px 5px;
@@ -269,7 +277,7 @@ header h1 {
 //FOR POP UP NODES WITHIN PORTFOLIO
 .modal-inside .modal-content {
 	background: #b91b35;
-	color: white;
+	color: $mainTextColor;
  }
 
 .bars {
@@ -322,7 +330,7 @@ header h1 {
 }
 
 .close-icon {
-   color: white;
+   color: $mainTextColor;
    font-weight: lighter !important;
 }
 
@@ -347,7 +355,7 @@ header h1 {
 
 .parallelogram{
 	transform: skew(-25deg);
-	background: #E41D34;
+	background: $titleColor;
 	padding-left: 1em;
 	padding-right: 1em;
 	margin-left:auto;
@@ -356,10 +364,15 @@ header h1 {
 	background-image:url("./resources/Parallelogrameffect.gif");
 }
 
-// RELEVANT BACKGROUND COLOR
+// RELEVANT BACKGROUND COLOR FOR PROJECTS PAGE
 #portfolio {
-	background: #e64862;
+	background: $pageBGColor;
 	padding-bottom: 5%;
+}
+
+.portfolioDesc{
+	color:$mainTextColor;
+	margin-bottom:3em;
 }
 
 .portfolio-item {
@@ -394,11 +407,11 @@ header h1 {
 }
 
 #skills {
-	background: #C6243F;
+	background: $pageBGColor;
 	min-height: 200px;
 	width: 100%;
-	overflow: hidden;
 	padding-bottom: 5%;
+	overflow: hidden;
 }
 
 .section-title {
@@ -408,13 +421,13 @@ header h1 {
 	font: 18px/24px 'opensans-bold', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 3px;
-	color: #fff;
+	color: $mainTextColor;
 	text-align: center;
 }
 
 .skill-icon {
 	font-size: 180%;
-	color: white;
+	color: $mainTextColor;
 	text-align: center;
 	position: relative;
 }
@@ -425,7 +438,7 @@ footer {
 	width: 100%;
 	overflow: hidden;
 	font-size: 14px;
-	color: white;
+	color: $mainTextColor;
 	position: relative;
 	text-align: center;
 }
@@ -478,3 +491,66 @@ footer a:focus {
 	column-gap: .4em;
 	/*background-color: #6A086D;*/
 }
+
+
+
+
+.highlight {
+	text-decoration:none;
+	color: $mainTextColor;
+	transition: color .2s;
+	border:none;
+	margin-left:2em;
+	margin-right:2em;
+}
+.highlight:hover:after , .highlight:hover:before{
+	width:115%;
+	left:0;
+}
+.highlight:after, .highlight:before{
+	content: ''; 
+	background-color: $highlightColor;
+	position: absolute;
+	top: calc(100%);
+	width: 0;
+	right: 0;
+	height: .15em;
+}
+.highlight:after{
+		transition: width .4s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+}
+.highlight:before{
+		transition: width .6s cubic-bezier(0.51, 0.18, 0, 0.88) .1s;
+}
+.highlight:active{
+	color:$highlightColor;
+}
+.hightlight:visited{
+	color: #353239;
+}
+
+#navhome{
+	width:100%;
+	z-index: -1;
+	background-color: $titleColor;
+}
+
+nav li{
+	list-style-type:none;
+	padding:.5em 1em .5em 1em;
+
+	display:inline-block;
+}
+
+nav ul{
+	margin:0;
+}
+
+nav {
+	text-align:center;
+	font-weight:bold;
+	font-size:1.5em;
+	position:abosolute;
+}
+
+nav li:hover{color:$highlightColor;}

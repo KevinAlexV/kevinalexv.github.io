@@ -8,20 +8,14 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
 import {
-  createBrowserRouter,
-  RouterProvider,
+  Route,
+  Routes,
+  Link
 } from "react-router-dom";
 
-const router = createBrowserRouter([
-{
-  path: "/",
-  element: <div></div>,
-},
-{
-  path: "/About",
-  element: <div>hello</div>,
-},
-]);
+const linkStyle = {
+  textDecoration: "none",
+};
 
 class App extends Component {
 
@@ -79,21 +73,42 @@ class App extends Component {
   render() {
     return (
       <div>
-        <RouterProvider router={router} />
-
         <Header sharedData={this.state.sharedData.basic_info} />
-        <About
-          resumeBasicInfo={this.state.resumeData.basic_info}
-          sharedBasicInfo={this.state.sharedData.basic_info}
-        />
-        <Skills
-          sharedSkills={this.state.sharedData.skills}
-          resumeBasicInfo={this.state.resumeData.basic_info}
-        />
-        <Projects
-          resumeProjects={this.state.resumeData.projects}
-          resumeBasicInfo={this.state.resumeData.basic_info}
-        />
+        <nav id="navhome">
+        <ul>
+          <Link style={linkStyle} to="/About"><li class="highlight parallelogram">About Me</li></Link>
+          <Link style={linkStyle} to="/Skills"><li class="highlight parallelogram">Skills</li></Link>
+          <Link style={linkStyle} to="/Projects"><li class="highlight parallelogram">My Projects</li></Link>
+        </ul>
+      </nav>
+        
+        <Routes>
+          <Route path="/About" element=
+          {
+            <About
+            resumeBasicInfo={this.state.resumeData.basic_info}
+            sharedBasicInfo={this.state.sharedData.basic_info}
+            />
+          }
+          />
+          <Route path="/Skills" element=
+          {
+            <Skills
+            sharedSkills={this.state.sharedData.skills}
+            resumeBasicInfo={this.state.resumeData.basic_info}
+            />
+          }
+          />
+          <Route path="/Projects" element=
+          {
+            <Projects
+            resumeProjects={this.state.resumeData.projects}
+            resumeBasicInfo={this.state.resumeData.basic_info}
+            />
+          }
+          />
+        </Routes>
+
         <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
       </div>
     );

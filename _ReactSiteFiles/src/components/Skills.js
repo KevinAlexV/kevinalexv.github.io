@@ -31,7 +31,7 @@ class Skills extends Component {
         <div className="col-md-12">
           <div className="col-md-12">
             <h1 className="section-title">
-              <span className="text-white">{sectionName}</span>
+              <span>{sectionName}</span>
             </h1>
           </div>
           <div>
