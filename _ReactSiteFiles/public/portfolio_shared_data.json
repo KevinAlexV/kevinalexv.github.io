@@ -85,8 +85,7 @@
         },
         {
           "name": "Git",
-          "class": "devicon-git-plain",
-          "level": "60"
+          "class": "devicon-git-plain"
         },
         {
           "name": "Perforce",
@@ -105,8 +104,7 @@
         },
         {
           "name": "O365",
-          "class": "devicon-mirosoftoffice-plain",
-          "level": "85"
+          "class": "devicon-mirosoftoffice-plain"
         }
       ]
     }

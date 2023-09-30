@@ -1,7 +1,7 @@
 {
     "basic_info": {
       "name": "KevinAlexV",
-      "titles": [ "Game Developer", "UX Designer", "Team lead"],
+      "titles": [ "Game Developer", "UX Designer", "Leader"],
       "social": [
         {
           "name": "github",
@@ -85,8 +85,7 @@
         },
         {
           "name": "Git",
-          "class": "devicon-git-plain",
-          "level": "60"
+          "class": "devicon-git-plain"
         },
         {
           "name": "Perforce",
@@ -105,8 +104,7 @@
         },
         {
           "name": "O365",
-          "class": "devicon-mirosoftoffice-plain",
-          "level": "85"
+          "class": "devicon-mirosoftoffice-plain"
         }
       ]
     }
