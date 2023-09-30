@@ -7,6 +7,22 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+const router = createBrowserRouter([
+{
+  path: "/",
+  element: <div></div>,
+},
+{
+  path: "/About",
+  element: <div>hello</div>,
+},
+]);
+
 class App extends Component {
 
   constructor(props) {
@@ -63,6 +79,8 @@ class App extends Component {
   render() {
     return (
       <div>
+        <RouterProvider router={router} />
+
         <Header sharedData={this.state.sharedData.basic_info} />
         <About
           resumeBasicInfo={this.state.resumeData.basic_info}
