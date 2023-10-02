@@ -6,12 +6,15 @@ class Skills extends Component {
       var sectionName = this.props.resumeBasicInfo.section_name.skills;
       var skillsDesc = this.props.resumeBasicInfo.skills_description;
       var skillsDesc2 = this.props.resumeBasicInfo.skills_description_2;
+
+      //Layout of each skill
       var skills = this.props.sharedSkills.icons.map(function (skills, i) {
         return (
           <li className="list-inline-item mx-3" key={i}>
             <span>
               <div className="text-center skills-tile">
-                <i className={skills.class} style={{ fontSize: "220%" }}>
+                <i style={{ fontSize: "220%" }}>
+                  <div className={`svg ${skills.class}`}></div>
                   <p
                     className="text-center"
                     style={{ fontSize: "30%", marginTop: "4px" }}
@@ -25,7 +28,7 @@ class Skills extends Component {
         );
       });
     }
-
+//The main layout of the skills page (first paragraph -> skills list -> second paragraph)
     return (
       <section id="skills">
         <div className="col-md-12">

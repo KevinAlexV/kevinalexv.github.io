@@ -538,8 +538,15 @@ footer a:focus {
 nav li{
 	list-style-type:none;
 	padding:.5em 1em .5em 1em;
-
 	display:inline-block;
+	margin-bottom:.16em;
+}
+
+
+@media (max-width: 576px) {
+	nav li {
+		margin-top:.5em;
+	}
 }
 
 nav ul{
@@ -554,3 +561,79 @@ nav {
 }
 
 nav li:hover{color:$highlightColor;}
+
+
+//Skills
+	//Use this to convert color of image.
+	//filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%) greyscale(50%);
+.svg {
+	color: $mainTextColor;
+	width:100%;
+	height:100%;
+	filter: brightness(0%) invert(100%);
+}
+
+.html {
+	content:url("./resources/icons/svg/html5-plain.svg");
+}
+
+.css {
+	content:url("./resources/icons/svg/css3-plain.svg");
+}
+
+.javascript {
+	content:url("./resources/icons/svg/javascript-plain.svg");
+}
+
+.python {
+	content:url("./resources/icons/svg/python-plain.svg");
+}
+.cplusplus {
+	content:url("./resources/icons/svg/cplusplus-plain.svg");
+}
+.csharp {
+	content:url("./resources/icons/svg/csharp-plain.svg");
+}
+.java {
+	content:url("./resources/icons/svg/java-plain.svg");
+}
+.opengl {
+	content:url("./resources/icons/svg/opengl-plain.svg");
+}
+.unity {
+	content:url("./resources/icons/svg/unity-original.svg");
+}
+.unreal {
+	content:url("./resources/icons/svg/unrealengine-original.svg");
+}
+.photoshop {
+	content:url("./resources/icons/svg/photoshop-plain.svg");
+}
+.blender {
+	content:url("./resources/icons/svg/blender-original.svg");
+}
+.trello {
+	content:url("./resources/icons/svg/trello-plain.svg");
+}
+.visualstudio {
+	content:url("./resources/icons/svg/visualstudio-plain.svg");
+}
+.vscode {
+	content:url("./resources/icons/svg/vscode-plain.svg");
+}
+.git {
+	content:url("./resources/icons/svg/git-plain.svg");
+}
+.perforce {
+	content:url("./resources/icons/svg/perforce.svg");
+}
+.entt {
+	content:url("./resources/icons/svg/entt.svg");
+}
+
+.eclipse {
+	content:url("./resources/icons/svg/eclipse.svg");
+}
+.o365 {
+	content:url("./resources/icons/svg/o365.svg");
+}
