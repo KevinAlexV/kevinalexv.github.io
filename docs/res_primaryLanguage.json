@@ -1,16 +1,16 @@
 {
     "basic_info": {
       "description_header": "Who am I?",
-      "description": "Kevin! I'm a bit of a tech enthusiast engrossed and captivated by Computer Science.\n\nWhile there's a lot encompassed under that subject, I find myself particularly interested in games programming - A passion that started in high school, all in front of a very old Dell monitor displaying some version of Eclipse, which allowed me to program a video game in Java.\n\nAfter creating the enemy art and core logic, the biggest lesson from the experience was 'Iterate, Iterate, Iterate'.",
-      "description2": "I'm sure my teacher was trying to replicate the tales of Markus Persson and his first time programming, but nevertheless, it started my journey into this fantastical world of solving logical puzzles posed by the challenges set out by employers and myself. Thus, I worked on several personal projects in my spare time, while attending university to hone my coding skills.\n\nI have experience working with a multitude of different teams, where I've adapted to find the best way to contribute and work with everyone. I've also worked independently and take pride in finding ways to motivate myself, which helps with motivating others (if need be).",
-      "description3":"I take great pride in my ability to learn and be adaptable. I'm constantly improving myself by performing my own research and watching programmers work.\n\nAt the moment, I strive to be a fully-fledged game developer that can create the very worlds I've loved exploring throughout my life. Video games have always been a form of escape for me, and I hope to help create that home away from home for anyone else that cares to step into another reality. Thus, I continue to learn and grow in order to accomplish that goal, and I have no intention of slowing down.",
+      "description": "Kevin! I'm a tech enthusiast captivated by Computer Science.\n\nWhile there's a lot encompassed under that subject, I find myself particularly interested in games programming - A passion that started in high school, all in front of a very old Dell monitor displaying some version of Eclipse, which allowed me to program a video game in Java.\n\nAfter creating the enemy art and core logic, the biggest lesson from the experience was 'Iterate, Iterate, Iterate'.",
+      "description2": "I'm sure my teacher was trying to replicate the tales of Markus Persson and his first time programming, but nevertheless, it started my journey into this fantastical world of solving logical puzzles posed by the challenges set out by employers and myself. Thus, I worked on several personal projects in my spare time, while attending university to hone my coding skills.\n\nI have experience working with a multitude of different teams, where I've adapted to find the best way to contribute and work with everyone. I've also worked independently and found ways to motivate myself, which helps with motivating others (if need be).",
+      "description3":"I take great pride in my ability to learn and be adaptable. I'm constantly improving myself by performing my own research and watching programmers work.\n\nAt the moment, I strive to be a fully-fledged game developer that can create the very worlds I've loved exploring throughout my life. Video games have always been a form of escape for me, and I hope to help create that home away from home for anyone else that cares to step into another reality. I continue to learn and grow in order to accomplish that goal, and I have no intention of slowing down.",
       "section_name": {
         "about": "About me",
         "projects": "Projects",
         "skills": "Skills",
         "experience": "Experience"
       },
-      "skills_description":"Over the years, dating back from High School, I've mostly focused on personal projects. However, that changed through my recent endeavors in a  Games Development program, where my focus shifted towards producing small games and related experiences.\n\nBy far, I've worked in Games Development and Security.\n\nWhile the security mindset has been ingrained in me, I frequently focused my efforts on programming, which was the connecting factor between Games Dev and Security. I honed quite a few skills as a result:",
+      "skills_description":"Over the years, dating back from High School, I've mostly focused on personal projects. However, that changed through my recent endeavors in a Games Development program, where my focus shifted towards producing small games and related experiences.\n\nBy far, I've worked in Games Development and Security.\n\nWhile the security mindset has been ingrained in me, I frequently focused my efforts on programming, which was the connecting factor between Games Dev and Security. I honed quite a few skills as a result:",
       "skills_description_2":"Admittedly, I still spent a lot of my time playing the various video games that inspired me to focus my attention to their development.\n\nThough, I find myself frequently reflecting on the different skill sets that I managed to develop through these games. Whether it be level design through game creators (like Mario Maker) or teamwork via co-op shooters (such as Call Of Duty: Zombies), I was always growing.",
       "projects_description":"I've begun producing more presentable projects over the past few years. The following are a few highlights (click on them to read more and see the respective repository/demo):"
     },
@@ -34,11 +34,19 @@
       "technologies": [
         {
           "name": "Unreal 5",
-          "class": "devicon-unrealengine-original"
+          "class": "unreal"
         },
         {
           "name": "C++",
-          "class": "devicon-cplusplus-plain"
+          "class": "cplusplus"
+        },
+        {
+          "name": "Git",
+          "class": "git"
+        },
+        {
+          "name": "VS 2022",
+          "class": "visualstudio"
         }
       ]
     },
@@ -53,16 +61,28 @@
       "url": "https://github.com/BTechTeamRed/GameEngine",
       "technologies": [
         {
-          "name": "Open GL",
-          "class": "devicon-opengl-plain"
+          "name": "OpenGL",
+          "class": "opengl"
         },
         {
           "name": "C++",
-          "class": "devicon-cplusplus-plain"
+          "class": "cplusplus"
+        },
+        {
+          "name": "EnTT",
+          "class": "entt"
         },
         {
           "name": "Git",
-          "class": "devicon-git-plain"
+          "class": "git"
+        },
+        {
+          "name": "VS 2022",
+          "class": "visualstudio"
+        },
+        {
+          "name": "Trello",
+          "class": "trello"
         }
       ]
     },
@@ -82,11 +102,27 @@
       "technologies": [
         {
           "name": "Unreal 5",
-          "class": "devicon-unrealengine-original"
+          "class": "unreal"
         },
         {
           "name": "C++",
-          "class": "devicon-cplusplus-plain"
+          "class": "cplusplus"
+        },
+        {
+          "name": "Perforce",
+          "class": "perforce"
+        },
+        {
+          "name": "VS 2022",
+          "class": "visualstudio"
+        },
+        {
+          "name": "Trello",
+          "class": "trello"
+        },
+        {
+          "name": "Photoshop",
+          "class": "photoshop"
         }
       ]
     },
@@ -105,11 +141,19 @@
       "technologies": [
         {
           "name": "Unreal 5",
-          "class": "devicon-unrealengine-original"
+          "class": "unreal"
         },
         {
           "name": "C++",
-          "class": "devicon-cplusplus-plain"
+          "class": "cplusplus"
+        },
+        {
+          "name": "Perforce",
+          "class": "perforce"
+        },
+        {
+          "name": "VS 2022",
+          "class": "visualstudio"
         }
       ]
     },
@@ -130,7 +174,15 @@
       "technologies": [
         {
           "name": "C++",
-          "class": "devicon-cplusplus-plain"
+          "class": "cplusplus"
+        },
+        {
+          "name": "Git",
+          "class": "git"
+        },
+        {
+          "name": "VS 2022",
+          "class": "visualstudio"
         }
       ]
     },
@@ -148,15 +200,27 @@
       "technologies": [
         {
           "name": "Unity",
-          "class": "devicon-unity-original"
+          "class": "unity"
         },
         {
           "name": "C#",
-          "class": "devicon-csharp-plain"
+          "class": "csharp"
         },
         {
           "name": "Git",
-          "class": "devicon-git-plain"
+          "class": "git"
+        },
+        {
+          "name": "VS 2022",
+          "class": "visualstudio"
+        },
+        {
+          "name": "Trello",
+          "class": "trello"
+        },
+        {
+          "name": "Photoshop",
+          "class": "photoshop"
         }
       ]
     },
@@ -171,15 +235,19 @@
       "technologies": [
         {
           "name": "Unity",
-          "class": "devicon-unity-original"
+          "class": "unity"
         },
         {
           "name": "C#",
-          "class": "devicon-csharp-plain"
+          "class": "csharp"
         },
         {
           "name": "Git",
-          "class": "devicon-git-plain"
+          "class": "git"
+        },
+        {
+          "name": "VS 2022",
+          "class": "visualstudio"
         }
       ]
     },
@@ -198,15 +266,19 @@
       "technologies": [
         {
           "name": "Unity",
-          "class": "devicon-unity-original"
+          "class": "unity"
         },
         {
           "name": "C#",
-          "class": "devicon-csharp-plain"
+          "class": "csharp"
         },
         {
           "name": "Git",
-          "class": "devicon-git-plain"
+          "class": "git"
+        },
+        {
+          "name": "VS 2022",
+          "class": "visualstudio"
         }
       ]
     },
@@ -215,6 +287,7 @@
       "startDate": "C#",
       "description": "A narrative-driven game built in Unity with a team of 5. I wrote the story, designed most of the levels and acted as project lead to ensure components connected and flowed together. ",
       "images": [
+        "images/portfolio/Ghostwalker/ghostwalker.mp4",
         "images/portfolio/Ghostwalker/GhostWalker1.png",
         "images/portfolio/Ghostwalker/GhostWalker2.png",
         "images/portfolio/Ghostwalker/GhostWalker3.png",
@@ -224,15 +297,31 @@
       "technologies": [
         {
           "name": "Unity",
-          "class": "devicon-unity-original"
+          "class": "unity"
         },
         {
           "name": "C#",
-          "class": "devicon-csharp-plain"
+          "class": "csharp"
         },
         {
           "name": "Git",
-          "class": "devicon-git-plain"
+          "class": "git"
+        },
+        {
+          "name": "VS 2022",
+          "class": "visualstudio"
+        },
+        {
+          "name": "Trello",
+          "class": "trello"
+        },
+        {
+          "name": "Photoshop",
+          "class": "photoshop"
+        },
+        {
+          "name": "Blender",
+          "class": "blender"
         }
       ]
     },
@@ -252,15 +341,27 @@
       "technologies": [
         {
           "name": "Unity",
-          "class": "devicon-unity-original"
+          "class": "unity"
         },
         {
           "name": "C#",
-          "class": "devicon-csharp-plain"
+          "class": "csharp"
         },
         {
           "name": "Git",
-          "class": "devicon-git-plain"
+          "class": "git"
+        },
+        {
+          "name": "VS 2022",
+          "class": "visualstudio"
+        },
+        {
+          "name": "Trello",
+          "class": "trello"
+        },
+        {
+          "name": "Photoshop",
+          "class": "photoshop"
         }
       ]
     },
@@ -275,15 +376,15 @@
       "technologies": [
         {
           "name": "O365",
-          "class": "devicon-mirosoftoffice-plain"
+          "class": "o365"
         },
         {
           "name": "HTML 5",
-          "class": "devicon-html5-plain"
+          "class": "html"
         },
         {
           "name": "CSS 3",
-          "class": "devicon-css3-plain"
+          "class": "css"
         }
       ]
     }

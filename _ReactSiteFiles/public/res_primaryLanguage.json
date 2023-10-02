@@ -34,11 +34,19 @@
       "technologies": [
         {
           "name": "Unreal 5",
-          "class": "devicon-unrealengine-original"
+          "class": "unreal"
         },
         {
           "name": "C++",
-          "class": "devicon-cplusplus-plain"
+          "class": "cplusplus"
+        },
+        {
+          "name": "Git",
+          "class": "git"
+        },
+        {
+          "name": "VS 2022",
+          "class": "visualstudio"
         }
       ]
     },
@@ -53,16 +61,28 @@
       "url": "https://github.com/BTechTeamRed/GameEngine",
       "technologies": [
         {
-          "name": "Open GL",
-          "class": "devicon-opengl-plain"
+          "name": "OpenGL",
+          "class": "opengl"
         },
         {
           "name": "C++",
-          "class": "devicon-cplusplus-plain"
+          "class": "cplusplus"
+        },
+        {
+          "name": "EnTT",
+          "class": "entt"
         },
         {
           "name": "Git",
-          "class": "devicon-git-plain"
+          "class": "git"
+        },
+        {
+          "name": "VS 2022",
+          "class": "visualstudio"
+        },
+        {
+          "name": "Trello",
+          "class": "trello"
         }
       ]
     },
@@ -82,11 +102,27 @@
       "technologies": [
         {
           "name": "Unreal 5",
-          "class": "devicon-unrealengine-original"
+          "class": "unreal"
         },
         {
           "name": "C++",
-          "class": "devicon-cplusplus-plain"
+          "class": "cplusplus"
+        },
+        {
+          "name": "Perforce",
+          "class": "perforce"
+        },
+        {
+          "name": "VS 2022",
+          "class": "visualstudio"
+        },
+        {
+          "name": "Trello",
+          "class": "trello"
+        },
+        {
+          "name": "Photoshop",
+          "class": "photoshop"
         }
       ]
     },
@@ -105,11 +141,19 @@
       "technologies": [
         {
           "name": "Unreal 5",
-          "class": "devicon-unrealengine-original"
+          "class": "unreal"
         },
         {
           "name": "C++",
-          "class": "devicon-cplusplus-plain"
+          "class": "cplusplus"
+        },
+        {
+          "name": "Perforce",
+          "class": "perforce"
+        },
+        {
+          "name": "VS 2022",
+          "class": "visualstudio"
         }
       ]
     },
@@ -130,7 +174,15 @@
       "technologies": [
         {
           "name": "C++",
-          "class": "devicon-cplusplus-plain"
+          "class": "cplusplus"
+        },
+        {
+          "name": "Git",
+          "class": "git"
+        },
+        {
+          "name": "VS 2022",
+          "class": "visualstudio"
         }
       ]
     },
@@ -148,15 +200,27 @@
       "technologies": [
         {
           "name": "Unity",
-          "class": "devicon-unity-original"
+          "class": "unity"
         },
         {
           "name": "C#",
-          "class": "devicon-csharp-plain"
+          "class": "csharp"
         },
         {
           "name": "Git",
-          "class": "devicon-git-plain"
+          "class": "git"
+        },
+        {
+          "name": "VS 2022",
+          "class": "visualstudio"
+        },
+        {
+          "name": "Trello",
+          "class": "trello"
+        },
+        {
+          "name": "Photoshop",
+          "class": "photoshop"
         }
       ]
     },
@@ -171,15 +235,19 @@
       "technologies": [
         {
           "name": "Unity",
-          "class": "devicon-unity-original"
+          "class": "unity"
         },
         {
           "name": "C#",
-          "class": "devicon-csharp-plain"
+          "class": "csharp"
         },
         {
           "name": "Git",
-          "class": "devicon-git-plain"
+          "class": "git"
+        },
+        {
+          "name": "VS 2022",
+          "class": "visualstudio"
         }
       ]
     },
@@ -198,15 +266,19 @@
       "technologies": [
         {
           "name": "Unity",
-          "class": "devicon-unity-original"
+          "class": "unity"
         },
         {
           "name": "C#",
-          "class": "devicon-csharp-plain"
+          "class": "csharp"
         },
         {
           "name": "Git",
-          "class": "devicon-git-plain"
+          "class": "git"
+        },
+        {
+          "name": "VS 2022",
+          "class": "visualstudio"
         }
       ]
     },
@@ -215,6 +287,7 @@
       "startDate": "C#",
       "description": "A narrative-driven game built in Unity with a team of 5. I wrote the story, designed most of the levels and acted as project lead to ensure components connected and flowed together. ",
       "images": [
+        "images/portfolio/Ghostwalker/ghostwalker.mp4",
         "images/portfolio/Ghostwalker/GhostWalker1.png",
         "images/portfolio/Ghostwalker/GhostWalker2.png",
         "images/portfolio/Ghostwalker/GhostWalker3.png",
@@ -224,15 +297,31 @@
       "technologies": [
         {
           "name": "Unity",
-          "class": "devicon-unity-original"
+          "class": "unity"
         },
         {
           "name": "C#",
-          "class": "devicon-csharp-plain"
+          "class": "csharp"
         },
         {
           "name": "Git",
-          "class": "devicon-git-plain"
+          "class": "git"
+        },
+        {
+          "name": "VS 2022",
+          "class": "visualstudio"
+        },
+        {
+          "name": "Trello",
+          "class": "trello"
+        },
+        {
+          "name": "Photoshop",
+          "class": "photoshop"
+        },
+        {
+          "name": "Blender",
+          "class": "blender"
         }
       ]
     },
@@ -252,15 +341,27 @@
       "technologies": [
         {
           "name": "Unity",
-          "class": "devicon-unity-original"
+          "class": "unity"
         },
         {
           "name": "C#",
-          "class": "devicon-csharp-plain"
+          "class": "csharp"
         },
         {
           "name": "Git",
-          "class": "devicon-git-plain"
+          "class": "git"
+        },
+        {
+          "name": "VS 2022",
+          "class": "visualstudio"
+        },
+        {
+          "name": "Trello",
+          "class": "trello"
+        },
+        {
+          "name": "Photoshop",
+          "class": "photoshop"
         }
       ]
     },
@@ -275,15 +376,15 @@
       "technologies": [
         {
           "name": "O365",
-          "class": "devicon-mirosoftoffice-plain"
+          "class": "o365"
         },
         {
           "name": "HTML 5",
-          "class": "devicon-html5-plain"
+          "class": "html"
         },
         {
           "name": "CSS 3",
-          "class": "devicon-css3-plain"
+          "class": "css"
         }
       ]
     }

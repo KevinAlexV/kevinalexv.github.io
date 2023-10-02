@@ -12,11 +12,11 @@ class Skills extends Component {
         return (
           <li className="list-inline-item mx-3" key={i}>
             <span>
-              <div className="text-center skills-tile">
+              <div className="text-center parallelogramSkills">
                 <i style={{ fontSize: "220%" }}>
-                  <div className={`svg ${skills.class}`}></div>
+                  <div className={`vgGifDiv svg ${skills.class}`}></div>
                   <p
-                    className="text-center"
+                    className="text-center vgGifDiv"
                     style={{ fontSize: "30%", marginTop: "4px" }}
                   >
                     {skills.name}

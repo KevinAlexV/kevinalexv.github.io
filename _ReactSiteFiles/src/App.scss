@@ -6,6 +6,7 @@ $panelColor: #EA3C5A;
 $header: #e64862;
 $pageBGColor: #C6243F;
 $titleColor: #E41D34;
+$popupBackground:#e64862;//#b91b35;
 $highlightColor: #ff70c8;
 $mainTextColor:white;
 
@@ -92,13 +93,9 @@ header h1 {
 	width: 100%;
 }
 
+//Window displaying project screenshots/videos
 .slider-image {
-	border: 5px solid #D7CAAA;
-}
-
-.slider-tab {
-	background-color: #D7CAAA;
-	height: 25px;
+	border: 5px solid $titleColor;
 }
 
 .slider-iconfiy {
@@ -276,7 +273,7 @@ header h1 {
 
 //FOR POP UP NODES WITHIN PORTFOLIO
 .modal-inside .modal-content {
-	background: #b91b35;
+	background: $popupBackground;
 	color: $mainTextColor;
  }
 
@@ -566,6 +563,16 @@ nav li:hover{color:$highlightColor;}
 //Skills
 	//Use this to convert color of image.
 	//filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%) greyscale(50%);
+
+.parallelogramSkills{
+	transform: skew(-25deg);
+	background: $titleColor;
+	width: 5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	background-image:url("./resources/Parallelogrameffect.gif");
+}
+
 .svg {
 	color: $mainTextColor;
 	width:100%;

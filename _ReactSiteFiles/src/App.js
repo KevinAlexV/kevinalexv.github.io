@@ -69,7 +69,7 @@ class App extends Component {
       },
     });
   }
-
+//https://stackoverflow.com/questions/55425363/render-reddit-embed-into-reactjs-component
   render() {
     return (
       <div>

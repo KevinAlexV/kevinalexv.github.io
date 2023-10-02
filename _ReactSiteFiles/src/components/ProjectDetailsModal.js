@@ -12,19 +12,24 @@ class ProjectDetailsModal extends Component {
       var description = this.props.data.description;
       var url = this.props.data.url;
       if (this.props.data.technologies) {
+        //skill icons in pop-up window for projects
         var tech = technologies.map((icons, i) => {
           return (
             <li className="list-inline-item mx-3" key={i}>
-              <span>
-                <div className="text-center">
-                  <i className={icons.class} style={{ fontSize: "300%" }}>
-                    <p className="text-center" style={{ fontSize: "30%" }}>
-                      {icons.name}
-                    </p>
-                  </i>
-                </div>
-              </span>
-            </li>
+            <span>
+              <div className="text-center parallelogramSkills">
+                <i style={{ fontSize: "220%" }}>
+                  <div className={`vgGifDiv svg ${icons.class}`}></div>
+                  <p
+                    className="text-center vgGifDiv"
+                    style={{ fontSize: "30%", marginTop: "4px" }}
+                  >
+                    {icons.name}
+                  </p>
+                </i>
+              </div>
+            </span>
+          </li>
           );
         });
         if (this.props.data.images) {
@@ -48,24 +53,6 @@ class ProjectDetailsModal extends Component {
         <div className="col-md-12">
           <div className="col-md-10 mx-auto" style={{ paddingBottom: "50px" }}>
             <div className="slider-tab">
-              <span
-                className="iconify slider-iconfiy"
-                data-icon="emojione:red-circle"
-                data-inline="false"
-                style={{ marginLeft: "5px" }}
-              ></span>{" "}
-              &nbsp;{" "}
-              <span
-                className="iconify slider-iconfiy"
-                data-icon="twemoji:yellow-circle"
-                data-inline="false"
-              ></span>{" "}
-              &nbsp;{" "}
-              <span
-                className="iconify slider-iconfiy"
-                data-icon="twemoji:green-circle"
-                data-inline="false"
-              ></span>
             </div>
             <AwesomeSlider
               cssModule={[AwesomeSliderStyles2]}
