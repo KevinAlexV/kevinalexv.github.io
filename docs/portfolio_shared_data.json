@@ -1,0 +1,116 @@
+{
+    "basic_info": {
+      "name": "KevinAlexV",
+      "titles": [ "Game Developer", "UX Designer", "Leader"],
+      "social": [
+        {
+          "name": "github",
+          "url": "https://github.com",
+          "class": "fab fa-github"
+        }
+      ],
+      "image": "myProfile.jpg"
+    },
+    "skills": {
+      "icons": [
+        {
+          "name": "HTML 5",
+          "class": "html",
+          "level": "95"
+        },
+        {
+          "name": "CSS 3",
+          "class": "css",
+          "level": "95"
+        },
+        {
+          "name": "JavaScript",
+          "class": "javascript",
+          "level": "80"
+        },
+        {
+          "name": "Python",
+          "class": "python",
+          "level": "60"
+        },
+        {
+          "name": "C++",
+          "class": "cplusplus",
+          "level": "70"
+        },
+        {
+          "name": "C#",
+          "class": "csharp",
+          "level": "65"
+        },
+        {
+          "name": "Java",
+          "class": "java",
+          "level": "90"
+        },
+        {
+          "name": "OpenGL",
+          "class": "opengl",
+          "level": "60"
+        },
+        {
+          "name": "Unity",
+          "class": "unity",
+          "level": "60"
+        },
+        {
+          "name": "Unreal 5",
+          "class": "unreal",
+          "level": "60"
+        },
+        {
+          "name": "Photoshop",
+          "class": "photoshop",
+          "level": "60"
+        },
+        {
+          "name": "Blender",
+          "class": "blender",
+          "level": "60"
+        },
+        {
+          "name": "Trello",
+          "class": "trello",
+          "level": "60"
+        },
+        {
+          "name": "VS 2022",
+          "class": "visualstudio",
+          "level": "60"
+        },
+        {
+          "name": "VS Code",
+          "class": "vscode",
+          "level": "60"
+        },
+        {
+          "name": "Git",
+          "class": "git"
+        },
+        {
+          "name": "Perforce",
+          "class": "perforce",
+          "level": "85"
+        },
+        {
+          "name": "EnTT",
+          "class": "entt",
+          "level": "60"
+        },
+        {
+          "name": "Eclipse",
+          "class": "eclipse",
+          "level": "75"
+        },
+        {
+          "name": "O365",
+          "class": "o365"
+        }
+      ]
+    }
+  }
