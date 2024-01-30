@@ -230,7 +230,17 @@
       "startDate": "C#",
       "description": "This is a simulation of the physics behind Spider-man's web swing, built in a team of 2 in the Unity game engine. The intent was to showcase how quicky Spider-man can feasibly move by swinging across a city versus running, in which we use Usain Bolt as a comparison.",
       "images": [
-        "images/portfolio/Webswing/WebSwingPhysics.gif"
+        "images/portfolio/Webswing/Spiderman.mp4",
+        "images/portfolio/Webswing/WebSwingPhysics.gif",
+        "images/portfolio/Webswing/Spiderman1.png",
+        "images/portfolio/Webswing/Spiderman2.png",
+        "images/portfolio/Webswing/Spiderman3.png",
+        "images/portfolio/Webswing/ConceptPresentation2.png",
+        "images/portfolio/Webswing/ConceptPresentation1.png",
+        "images/portfolio/Webswing/ConceptPresentation3.png",
+        "images/portfolio/Webswing/ConceptPresentation4.png",
+        "images/portfolio/Webswing/ConceptPresentation5.png",
+        "images/portfolio/Webswing/SpidermanEarlyDev.gif"
       ],
       "url": "https://github.com/KevinAlexV/Web-Swing-Physics",
       "technologies": [
