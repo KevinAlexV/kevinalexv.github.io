@@ -1,0 +1,393 @@
+{
+    "basic_info": {
+      "description_header": "Who am I?",
+      "description": "Kevin! I'm a tech enthusiast captivated by Computer Science.\n\nWhile there's a lot encompassed under that subject, I find myself particularly interested in games programming - A passion that started in high school, all in front of a very old Dell monitor displaying some version of Eclipse, which allowed me to program a video game in Java.\n\nAfter creating the enemy art and core logic, the biggest lesson from the experience was 'Iterate, Iterate, Iterate'.",
+      "description2": "I'm sure my teacher was trying to replicate the tales of Markus Persson and his first time programming, but nevertheless, it started my journey into this fantastical world of solving logical puzzles posed by the challenges set out by employers and myself. Thus, I worked on several personal projects in my spare time, while attending university to hone my coding skills.\n\nI have experience working with a multitude of different teams, where I've adapted to find the best way to contribute and work with everyone. I've also worked independently and found ways to motivate myself, which helps with motivating others (if need be).",
+      "description3":"I take great pride in my ability to learn and be adaptable. I'm constantly improving myself by performing my own research and watching programmers work.\n\nAt the moment, I strive to be a fully-fledged game developer that can create the very worlds I've loved exploring throughout my life. Video games have always been a form of escape for me, and I hope to help create that home away from home for anyone else that cares to step into another reality. I continue to learn and grow in order to accomplish that goal, and I have no intention of slowing down.",
+      "section_name": {
+        "about": "About me",
+        "projects": "Projects",
+        "skills": "Skills",
+        "experience": "Experience"
+      },
+      "skills_description":"Over the years, dating back from High School, I've mostly focused on personal projects. However, that changed through my recent endeavors in a Games Development program, where my focus shifted towards producing small games and related experiences.\n\nBy far, I've worked in Games Development and Security.\n\nWhile the security mindset has been ingrained in me, I frequently focused my efforts on programming, which was the connecting factor between Games Dev and Security. I honed quite a few skills as a result:",
+      "skills_description_2":"Admittedly, I still spent a lot of my time playing the various video games that inspired me to focus my attention to their development.\n\nThough, I find myself frequently reflecting on the different skill sets that I managed to develop through these games. Whether it be level design through game creators (like Mario Maker) or teamwork via co-op shooters (such as Call Of Duty: Zombies), I was always growing.",
+      "projects_description":"I've begun producing more presentable projects over the past few years. The following are a few highlights (click on them to read more and see the respective repository/demo):"
+    },
+  "projects": [
+
+    {
+      "title": "Musical AI",
+      "startDate": "C++",
+      "description": "This is a project revolving around the concept of AI changing their behaviour based on the tempo and rhythm of the music playing in the background. The hope is to explore the many applications of an AI designed in this way, whether it be for a game mechanic or to help developers adjust the tone of their game by simply changing the music. This is being built in Unreal 5 with Blueprints and C++, and contains a short demonstration to highlight how music can affect a game.",
+      "images": [
+        "images/portfolio/MusicalAI/MAI.mp4",
+        "images/portfolio/MusicalAI/Animation.gif",
+        "images/portfolio/MusicalAI/mai1.png",
+        "images/portfolio/MusicalAI/mai2.png",
+        "images/portfolio/MusicalAI/mai3.png",
+        "images/portfolio/MusicalAI/mai4.png",
+        "images/portfolio/MusicalAI/mai5.png",
+        "images/portfolio/MusicalAI/mai6.png"
+      ],
+      "url": "https://github.com/KevinAlexV/MusicalAI",
+      "technologies": [
+        {
+          "name": "Unreal 5",
+          "class": "unreal"
+        },
+        {
+          "name": "C++",
+          "class": "cplusplus"
+        },
+        {
+          "name": "Git",
+          "class": "git"
+        },
+        {
+          "name": "VS 2022",
+          "class": "visualstudio"
+        }
+      ]
+    },
+    {
+      "title": "MonoChrome/BlueDemise",
+      "startDate": "C++",
+      "description": "A game, MonoChrome, powered by a custom 2D engine built from the ground up, with no previous experience working on engines. The BlueDemise engine was built in a team of 12 over the course of 3 months. It is based on an Entity Component System architecture, and utilizes the EnTT library for that purpose. I worked on the rendering pipeline (including animation and general object rendering via OpenGL) and resource management aspects of this engine.",
+      "images": [
+        "images/portfolio/bluedemise/BlueDemise.mp4",
+        "images/portfolio/bluedemise/bluedemise.png"
+      ],
+      "url": "https://github.com/BTechTeamRed/GameEngine",
+      "technologies": [
+        {
+          "name": "OpenGL",
+          "class": "opengl"
+        },
+        {
+          "name": "C++",
+          "class": "cplusplus"
+        },
+        {
+          "name": "EnTT",
+          "class": "entt"
+        },
+        {
+          "name": "Git",
+          "class": "git"
+        },
+        {
+          "name": "VS 2022",
+          "class": "visualstudio"
+        },
+        {
+          "name": "Trello",
+          "class": "trello"
+        }
+      ]
+    },
+    {
+      "title": "Welcome CROW",
+      "startDate": "C++",
+      "description": "An Unreal Engine 5 game created for the Epic MegaJam over a week in a team of 5. I was largely responsible for the AI system (using Unreal's behavior trees to develop it), core gameplay logic, map design, lighting, and cinematics (including the text-based cutscenes and camera pan in the intro). I also used the Niagara system to develop a few different particle systems seen throughout the game, such as the fog that increases in density during gameplay and the text that pops up from the bottom of the screen when typing. Aside from those responsibilities, I also helped debug and assist our other developers to help their learning and/or just give a second pair of eyes to walk through code and understand why it may not work.",
+      "images": [
+        "images/portfolio/welcomeCrow/WelcomeCROW.mp4",
+        "images/portfolio/welcomeCrow/crow1.png",
+        "images/portfolio/welcomeCrow/crow2.png",
+        "images/portfolio/welcomeCrow/crow3.png",
+        "images/portfolio/welcomeCrow/crow4.png",
+        "images/portfolio/welcomeCrow/crow5.png"
+      ],
+      "url": "https://jake-pauls.itch.io/welcome-crow",
+      "technologies": [
+        {
+          "name": "Unreal 5",
+          "class": "unreal"
+        },
+        {
+          "name": "C++",
+          "class": "cplusplus"
+        },
+        {
+          "name": "Perforce",
+          "class": "perforce"
+        },
+        {
+          "name": "VS 2022",
+          "class": "visualstudio"
+        },
+        {
+          "name": "Trello",
+          "class": "trello"
+        },
+        {
+          "name": "Photoshop",
+          "class": "photoshop"
+        }
+      ]
+    },
+    {
+      "title": "Cat out of Hell",
+      "startDate": "C++",
+      "description": "A bullet-hell game made over the course of 2 days for the 2023 Alberta Game Jam done in a team of 10 (6 artists, 4 programmers). I was a gameplay programmer, and focused on the logic for projectiles and some on screen UI logic. I  also assisted with general debugging and code cleanup for other team members and just helped where ever I could. ",
+      "images": [
+        "images/portfolio/CatOutOfHell/CatJamLostGame.mp4",
+        "images/portfolio/CatOutOfHell/CJ1.png",
+        "images/portfolio/CatOutOfHell/CJ2.png",
+        "images/portfolio/CatOutOfHell/CJ3.png",
+        "images/portfolio/CatOutOfHell/CJ4.png"
+      ],
+      "url": "https://maxsg5.itch.io/cat-out-of-hell",
+      "technologies": [
+        {
+          "name": "Unreal 5",
+          "class": "unreal"
+        },
+        {
+          "name": "C++",
+          "class": "cplusplus"
+        },
+        {
+          "name": "Perforce",
+          "class": "perforce"
+        },
+        {
+          "name": "VS 2022",
+          "class": "visualstudio"
+        }
+      ]
+    },
+    {
+      "title": "Geographic Info System",
+      "startDate": "C++",
+      "description": "A system that allows for the indexing and searching of several world coordinates from several databases. The program is interacted with via a script file, and is optimized for searches in large datasets. Using quick file parsing and efficient memory management.\n\nKey data structures involved include Quadtrees, Hash Tables, regex, and buffer pools.",
+      "images": [
+        "images/portfolio/GIS/QuadTree1.png",
+        "images/portfolio/GIS/QuadTree2.PNG",
+        "images/portfolio/GIS/QuadTree3.png",
+        "images/portfolio/GIS/QuadTree4.png",
+        "images/portfolio/GIS/QuadTree5.png",
+        "images/portfolio/GIS/QuadTree6.png",
+        "images/portfolio/GIS/QuadTree7.png"
+      ],
+      "url": "https://github.com/KevinAlexV/Geographic-Information-System",
+      "technologies": [
+        {
+          "name": "C++",
+          "class": "cplusplus"
+        },
+        {
+          "name": "Git",
+          "class": "git"
+        },
+        {
+          "name": "VS 2022",
+          "class": "visualstudio"
+        }
+      ]
+    },
+    {
+      "title": "Rain Catcher",
+      "startDate": "C#",
+      "description": "A physics based game where you manipulate falling raindrops to catch other ones in order to raise your score. This was built in a team of 2, with some external help for the music and general game design & direction. I was the primary gameplay programmer, where I designed and programmed the core gameplay and wrote the physics logic. Though short, the game was a means to kickstart a series of other games by creating a work pipeline that fit our small team. Going forward, this experience will be invaluable to furthering future projects.",
+      "images": [
+        "images/portfolio/RainCatcher/Rain4.png",
+        "images/portfolio/RainCatcher/RainCatcher.mp4",
+        "images/portfolio/RainCatcher/Rain1.png",
+        "images/portfolio/RainCatcher/Rain2.png",
+        "images/portfolio/RainCatcher/Rain3.png"
+      ],
+      "url": "https://play.google.com/store/apps/details?id=com.BandWagonStudios.RainCatcher",
+      "technologies": [
+        {
+          "name": "Unity",
+          "class": "unity"
+        },
+        {
+          "name": "C#",
+          "class": "csharp"
+        },
+        {
+          "name": "Git",
+          "class": "git"
+        },
+        {
+          "name": "VS 2022",
+          "class": "visualstudio"
+        },
+        {
+          "name": "Trello",
+          "class": "trello"
+        },
+        {
+          "name": "Photoshop",
+          "class": "photoshop"
+        }
+      ]
+    },
+    {
+      "title": "The Physics of a Web-swing",
+      "startDate": "C#",
+      "description": "This is a simulation of the physics behind Spider-man's web swing, built in a team of 2 in the Unity game engine. The intent was to showcase how quicky Spider-man can feasibly move by swinging across a city versus running, in which we use Usain Bolt as a comparison.",
+      "images": [
+        "images/portfolio/Webswing/WebSwingPhysics.gif"
+      ],
+      "url": "https://github.com/KevinAlexV/Web-Swing-Physics",
+      "technologies": [
+        {
+          "name": "Unity",
+          "class": "unity"
+        },
+        {
+          "name": "C#",
+          "class": "csharp"
+        },
+        {
+          "name": "Git",
+          "class": "git"
+        },
+        {
+          "name": "VS 2022",
+          "class": "visualstudio"
+        }
+      ]
+    },
+    {
+      "title": "Utorial",
+      "startDate": "C#",
+      "description": "This game was created for the 2023 Fireside Game Jam within a week in a team of 4. I helped write the gameplay, AI, and narration systems in order to make an auto-scroller platformer where AI characters must be guided to the end of each level. \n\nYou can find the Game Jam here: https://itch.io/jam/fireside-jam-2023 \n\nHere is the rating page: https://itch.io/jam/fireside-jam-2023/rate/2069692 \n\nYou can find a build here: https://evanohirabe.itch.io/utorial",
+      "images": [
+        "images/portfolio/FiresideJam/utorial.mp4",
+        "images/portfolio/FiresideJam/Animation.gif",
+        "images/portfolio/FiresideJam/fireside1.PNG",
+        "images/portfolio/FiresideJam/fireside2.PNG",
+        "images/portfolio/FiresideJam/fireside3.PNG"
+      ],
+      "url": "https://evanohirabe.itch.io/utorial",
+      "technologies": [
+        {
+          "name": "Unity",
+          "class": "unity"
+        },
+        {
+          "name": "C#",
+          "class": "csharp"
+        },
+        {
+          "name": "Git",
+          "class": "git"
+        },
+        {
+          "name": "VS 2022",
+          "class": "visualstudio"
+        }
+      ]
+    },
+    {
+      "title": "Ghost Walker",
+      "startDate": "C#",
+      "description": "A narrative-driven game built in Unity with a team of 5. I wrote the story, designed most of the levels and acted as project lead to ensure components connected and flowed together. ",
+      "images": [
+        "images/portfolio/Ghostwalker/ghostwalker.mp4",
+        "images/portfolio/Ghostwalker/GhostWalker1.png",
+        "images/portfolio/Ghostwalker/GhostWalker2.png",
+        "images/portfolio/Ghostwalker/GhostWalker3.png",
+        "images/portfolio/Ghostwalker/GhostWalker4.png"
+      ],
+      "url": "https://kevinalexv.itch.io/ghost-walker",
+      "technologies": [
+        {
+          "name": "Unity",
+          "class": "unity"
+        },
+        {
+          "name": "C#",
+          "class": "csharp"
+        },
+        {
+          "name": "Git",
+          "class": "git"
+        },
+        {
+          "name": "VS 2022",
+          "class": "visualstudio"
+        },
+        {
+          "name": "Trello",
+          "class": "trello"
+        },
+        {
+          "name": "Photoshop",
+          "class": "photoshop"
+        },
+        {
+          "name": "Blender",
+          "class": "blender"
+        }
+      ]
+    },
+    {
+      "title": "Malevolence",
+      "startDate": "C#",
+      "description": "A turn-based card game built with a team of 4 in Unity. I designed the UI, wrote the story and acted as a playtester and bug-fixer for our core systems, without a specific understanding of each component.",
+      "images": [
+        "images/portfolio/Malevolence/Malevolence.mp4",
+        "images/portfolio/Malevolence/Malevolence1.png",
+        "images/portfolio/Malevolence/Malevolence2.png",
+        "images/portfolio/Malevolence/Malevolence3.png",
+        "images/portfolio/Malevolence/Malevolence4.png",
+        "images/portfolio/Malevolence/Malevolence5.png"
+      ],
+      "url": "https://kevinalexv.itch.io/malevolence",
+      "technologies": [
+        {
+          "name": "Unity",
+          "class": "unity"
+        },
+        {
+          "name": "C#",
+          "class": "csharp"
+        },
+        {
+          "name": "Git",
+          "class": "git"
+        },
+        {
+          "name": "VS 2022",
+          "class": "visualstudio"
+        },
+        {
+          "name": "Trello",
+          "class": "trello"
+        },
+        {
+          "name": "Photoshop",
+          "class": "photoshop"
+        }
+      ]
+    },
+    {
+      "title": "VPN Email Scripts",
+      "startDate": "PowerShell & HTML",
+      "description": "During my time working in security, as COVID-19 affected our organization, I took the liberty of creating a script that would generate and encapsulate the necessary VPN tokens and place them within an email for a given employee, alongside providing that employee the needed permissions to use a VPN. The email, from the same script, would then contain the instructions needed for an employee to set up their token to start working from home. \n\nThis script spared several days worth of work from our security team, and allowed them to focus on troubleshooting VPN connections. It easily covered over 2000 employees, and allowed them to get working from home quicker than would normally have been possible. ",
+      "images": [
+        "images/portfolio/powershell.jpg"
+      ],
+      "url": "https://github.com",
+      "technologies": [
+        {
+          "name": "O365",
+          "class": "o365"
+        },
+        {
+          "name": "HTML 5",
+          "class": "html"
+        },
+        {
+          "name": "CSS 3",
+          "class": "css"
+        }
+      ]
+    }
+  ]
+  }

@@ -192,6 +192,7 @@
       "description": "A physics based game where you manipulate falling raindrops to catch other ones in order to raise your score. This was built in a team of 2, with some external help for the music and general game design & direction. I was the primary gameplay programmer, where I designed and programmed the core gameplay and wrote the physics logic. Though short, the game was a means to kickstart a series of other games by creating a work pipeline that fit our small team. Going forward, this experience will be invaluable to furthering future projects.",
       "images": [
         "images/portfolio/RainCatcher/Rain4.png",
+        "images/portfolio/RainCatcher/RainCatcher.mp4",
         "images/portfolio/RainCatcher/Rain1.png",
         "images/portfolio/RainCatcher/Rain2.png",
         "images/portfolio/RainCatcher/Rain3.png"
