@@ -87,6 +87,44 @@
       ]
     },
     {
+      "title": "Octopations",
+      "startDate": "C++",
+      "description": "An Unreal Engine 5 and Web game created for the Global GameJam over a week in a team of 6 which allows players to use their phones as controllers for a server-hosted game that is visualized through an Unreal 5 game client, akin to Jackbox Party Pack games. I worked on the Unreal 5 game client UI and websocket connection logic to connect with our locally hosted server to listen for game events via subscribed lambda functions which triggered when the server sends specific events over to the game client. This allowed for easy intigration of UI elements that were bound to said server events and gave a seamless experience between phone input and game-state updates.",
+      "images": [
+        "images/portfolio/Octopations/OctopationsDemo.mp4",
+        "images/portfolio/Octopations/octo1.png",
+        "images/portfolio/Octopations/octo2.png",
+        "images/portfolio/Octopations/octo3.png"
+      ],
+      "url": "https://github.com/20TB-ZipBomb/GGJ_Game",
+      "technologies": [
+        {
+          "name": "Unreal 5",
+          "class": "unreal"
+        },
+        {
+          "name": "C++",
+          "class": "cplusplus"
+        },
+        {
+          "name": "Git",
+          "class": "git"
+        },
+        {
+          "name": "VS 2022",
+          "class": "visualstudio"
+        },
+        {
+          "name": "Trello",
+          "class": "trello"
+        },
+        {
+          "name": "Photoshop",
+          "class": "photoshop"
+        }
+      ]
+    },
+    {
       "title": "Welcome CROW",
       "startDate": "C++",
       "description": "An Unreal Engine 5 game created for the Epic MegaJam over a week in a team of 5. I was largely responsible for the AI system (using Unreal's behavior trees to develop it), core gameplay logic, map design, lighting, and cinematics (including the text-based cutscenes and camera pan in the intro). I also used the Niagara system to develop a few different particle systems seen throughout the game, such as the fog that increases in density during gameplay and the text that pops up from the bottom of the screen when typing. Aside from those responsibilities, I also helped debug and assist our other developers to help their learning and/or just give a second pair of eyes to walk through code and understand why it may not work.",
