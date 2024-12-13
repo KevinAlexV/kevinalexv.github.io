@@ -78,7 +78,7 @@ class App extends Component {
         <ul>
           <Link style={linkStyle} to="/About"><li class="highlight parallelogram">About Me</li></Link>
           <Link style={linkStyle} to="/Skills"><li class="highlight parallelogram">Skills</li></Link>
-          <Link style={linkStyle} to="/Projects"><li class="highlight parallelogram">My Projects</li></Link>
+          <Link style={linkStyle} to="/Projects"><li class="highlight parallelogram">Projects</li></Link>
         </ul>
       </nav>
         
@@ -102,7 +102,8 @@ class App extends Component {
           <Route path="/Projects" element=
           {
             <Projects
-            resumeProjects={this.state.resumeData.projects}
+            resumeMajorProjects={this.state.resumeData.major_projects}
+            resumeProjects={this.state.resumeData.personal_projects}
             resumeBasicInfo={this.state.resumeData.basic_info}
             />
           }

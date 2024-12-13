@@ -79,8 +79,18 @@
           "level": "60"
         },
         {
+          "name": "Jira",
+          "class": "jira",
+          "level": "60"
+        },
+        {
           "name": "VS 2022",
           "class": "visualstudio",
+          "level": "60"
+        },
+        {
+          "name": "Rider",
+          "class": "rider",
           "level": "60"
         },
         {

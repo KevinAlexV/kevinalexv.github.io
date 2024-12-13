@@ -17,8 +17,68 @@ class Projects extends Component {
 
     let detailsModalClose = () => this.setState({ detailsModalShow: false });
     if (this.props.resumeProjects && this.props.resumeBasicInfo) {
-      var sectionName = this.props.resumeBasicInfo.section_name.projects;
-      var projectDesc = this.props.resumeBasicInfo.projects_description;
+      var sectionName = this.props.resumeBasicInfo.section_name.work;
+      var projectDesc = this.props.resumeBasicInfo.work_description;
+      var sectionName2 = this.props.resumeBasicInfo.section_name.projects;
+      var projectDesc2 = this.props.resumeBasicInfo.projects_description;
+      var majorprojects = this.props.resumeMajorProjects.map(function (projects) 
+      {
+        var splitString = projects.images[0].split(".");
+        if(splitString[splitString.length - 1] == "mp4")
+        {
+          return (
+            <div
+              className="col-sm-12 col-md-6 col-lg-4"
+              key={projects.title}
+              style={{ cursor: "pointer" }}
+            >
+              <span className="portfolio-item d-block">
+                <div className="foto" onClick={() => detailsModalShow(projects)}>
+                  <div>
+                    <video width="100%" controls autoPlay={false} muted={true} loop={true} style={{"margin-bottom": 0, "padding-bottom": 0, "position": 'relative'}}>
+                      <source src = {projects.images[0]} type="video/mp4"/>
+                      Your browser does not support the video tag.
+                    </video>
+                    <span className="project-date">{projects.startDate}</span>
+                    <br />
+                    <p className="project-title-settings mt-3">
+                      {projects.title}
+                    </p>
+                  </div>
+                </div>
+              </span>
+            </div>
+          );
+        }
+        else{
+          return (
+            <div
+              className="col-sm-12 col-md-6 col-lg-4"
+              key={projects.title}
+              style={{ cursor: "pointer" }}
+            >
+              <span className="portfolio-item d-block">
+                <div className="foto" onClick={() => detailsModalShow(projects)}>
+                  <div>
+                    <img
+                      src={projects.images[0]}
+                      alt="projectImages"
+                      height="230"
+                      style={{marginBottom: 0, paddingBottom: 0, position: 'relative'}}
+                    />
+                    
+                    <span className="project-date">{projects.startDate}</span>
+                    <br />
+                    <p className="project-title-settings mt-3">
+                      {projects.title}
+                    </p>
+                  </div>
+                </div>
+              </span>
+            </div>
+          );
+        }
+      });
       var projects = this.props.resumeProjects.map(function (projects) 
       {
         var splitString = projects.images[0].split(".");
@@ -78,7 +138,7 @@ class Projects extends Component {
         }
       });
     }
-
+// Return of the portfolio page containing work and projects done.
     return (
       <section id="portfolio">
         <div className="col-md-12">
@@ -88,6 +148,22 @@ class Projects extends Component {
           <div>
             <p className="portfolioDesc" style={{ textAlign: "center" }}>
               {projectDesc}
+            </p>
+          </div>
+          <div className="col-md-12 mx-auto">
+            <div className="row mx-auto">{majorprojects}</div>
+          </div>
+          <ProjectDetailsModal
+            show={this.state.detailsModalShow}
+            onHide={detailsModalClose}
+            data={this.state.deps}
+          />
+          <h1 className="section-title">
+            <span>{sectionName2}</span>
+          </h1>
+          <div>
+            <p className="portfolioDesc" style={{ textAlign: "center" }}>
+              {projectDesc2}
             </p>
           </div>
           <div className="col-md-12 mx-auto">

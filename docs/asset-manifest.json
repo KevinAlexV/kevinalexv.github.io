@@ -1,11 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.8542f778.css",
-    "main.js": "/static/js/main.db9e4dff.js",
+    "main.css": "/static/css/main.474b3c35.css",
+    "main.js": "/static/js/main.0db67362.js",
     "static/media/PEB_Rendering_Expirement_2.gif": "/static/media/PEB_Rendering_Expirement_2.caba243f58fbbd8a13f7.gif",
     "static/media/PEB_Rendering_Expirement.gif": "/static/media/PEB_Rendering_Expirement.a4126c4aa01db2e05b9e.gif",
     "static/media/PEB_Rendering_Expirement_3.gif": "/static/media/PEB_Rendering_Expirement_3.bdc53a031a34bcfc8983.gif",
+    "static/media/rider-plain.svg": "/static/media/rider-plain.ab7b9978f1c686c069d9.svg",
     "static/media/myProfile2.png": "/static/media/myProfile2.0d89a10cee3bdae9742a.png",
+    "static/media/jira.svg": "/static/media/jira.7f2e2872a5ddca86c92d.svg",
     "static/media/Parallelogrameffect.gif": "/static/media/Parallelogrameffect.a0b1a7ee78be3ad914fe.gif",
     "static/media/entt.svg": "/static/media/entt.de2c8d242d4d91a8b312.svg",
     "static/media/opengl-plain.svg": "/static/media/opengl-plain.8ce18057f8f7233c46e6.svg",
@@ -28,11 +30,11 @@
     "static/media/html5-plain.svg": "/static/media/html5-plain.69274ea277b1ee86ba50.svg",
     "static/media/unity-original.svg": "/static/media/unity-original.2f57e6a78f2ed09ab4bb.svg",
     "static/media/visualstudio-plain.svg": "/static/media/visualstudio-plain.1f9992b2ae3455e3a103.svg",
-    "main.8542f778.css.map": "/static/css/main.8542f778.css.map",
-    "main.db9e4dff.js.map": "/static/js/main.db9e4dff.js.map"
+    "main.474b3c35.css.map": "/static/css/main.474b3c35.css.map",
+    "main.0db67362.js.map": "/static/js/main.0db67362.js.map"
   },
   "entrypoints": [
-    "static/css/main.8542f778.css",
-    "static/js/main.db9e4dff.js"
+    "static/css/main.474b3c35.css",
+    "static/js/main.0db67362.js"
   ]
 }

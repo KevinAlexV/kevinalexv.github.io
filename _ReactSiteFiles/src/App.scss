@@ -622,8 +622,14 @@ nav li:hover{color:$highlightColor;}
 .trello {
 	content:url("./resources/trello-plain.svg");
 }
+.jira {
+	content:url("./resources/jira.svg");
+}
 .visualstudio {
 	content:url("./resources/visualstudio-plain.svg");
+}
+.rider {
+	content: url("./resources/rider-plain.svg");
 }
 .vscode {
 	content:url("./resources/vscode-plain.svg");

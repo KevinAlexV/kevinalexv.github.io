@@ -15,3 +15,6 @@ Porfolioshareddata contains skills and header information.
 
 Components/.json seems to contain the template for building each section, which can be modified
 accordingly.
+
+App.js contains the variable mapping for the json files, while the scss files contain the css styling for
+the site. You can go here to add more icons.
