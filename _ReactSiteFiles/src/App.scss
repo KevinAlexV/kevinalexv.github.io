@@ -595,6 +595,9 @@ nav li:hover{color:$highlightColor;}
 .python {
 	content:url("./resources/python-plain.svg");
 }
+.lua {
+	content:url("./resources/external-lua.svg");
+}
 .cplusplus {
 	content:url("./resources/cplusplus-plain.svg");
 }
@@ -612,6 +615,9 @@ nav li:hover{color:$highlightColor;}
 }
 .unreal {
 	content:url("./resources/unrealengine-original.svg");
+}
+.frostbite {
+	content:url("./resources/frostbite.svg");
 }
 .photoshop {
 	content:url("./resources/photoshop-plain.svg");

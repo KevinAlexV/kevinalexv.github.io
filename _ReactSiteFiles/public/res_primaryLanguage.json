@@ -18,9 +18,40 @@
     },
   "major_projects": [
     {
+      "title": "UFC 6",
+      "startDate": "Electronic Arts",
+      "description": "UFC6 is a MMA fighting game released in 2026. I worked as a UI Engineer on the project and had to learn several tech stacks as a part of my onboarding. I was responsible for bug-fixing various UI issues that required very in-depth analysis of code without breakpoints while utilizing custom debugging tools to show callstacks and live data. I also participated in the development of it's first expansion, which allowed the team to explore a newer UI tech stack similar to other popular game engines. The development of this UI was focused on Test-Driven-Development, so I wrote unit tests and constructed screens following the Model-View ViewModel pattern.",
+      "images": [
+        "images/portfolio/MajorProjects/UFC6/CoverArt.jpg"
+      ],
+      "url": "https://www.ea.com/games/ufc/ufc-6",
+      "technologies": [
+        {
+          "name": "Frostbite",
+          "class": "frostbite"
+        },
+        {
+          "name": "C++",
+          "class": "cplusplus"
+        },
+        {
+          "name": "Lua",
+          "class": "lua"
+        },
+        {
+          "name": "Jira",
+          "class": "jira"
+        },
+        {
+          "name": "Perforce",
+          "class": "perforce"
+        }
+      ]
+    },
+    {
       "title": "Squad",
       "startDate": "Offworld Industries",
-      "description": "Squad is a tactical FPS released in 2015. I was brought onboard to work on optimizations for the game while it was being upgrading into Unreal Engine 5. This involved lots of blueprint to C++ conversions, reduction of tick-based calls, mathematic and data structure adjustments for efficiency and lots of profiling using UE insights.",
+      "description": "Squad is a tactical FPS released in 2015. I was brought onboard to work on optimizations for the game while it was being upgraded into Unreal Engine 5. This involved lots of blueprint to C++ conversions, reduction of tick-based calls, mathematic and data structure adjustments for efficiency and lots of profiling using UE insights.",
       "images": [
         "images/portfolio/MajorProjects/Squad/SquadBanner.jpg"
       ],
@@ -43,10 +74,32 @@
           "class": "perforce"
         }
       ]
-    } 
+    }
   ],
   "personal_projects": [
-
+    {
+      "title": "A Discontinued Dream",
+      "startDate": "C++",
+      "description": "A game following the dreams of a traumatized child who wants to find an alien with his friends. I acted as a programmer, producer, and designer for the game to varying degrees throughout the project, tapping into several skill sets I've gained over the years from school, personal, and professional work. This was an incredibly collaborative project that required several iterations on game concepts and refactoring of our existing code to accomodate design changes while being open ended enough to expand upon those features. We approached this project with a 'find the fun' mindset and playtested it often with blind playtests at several indie game festivals.",
+      "images": [
+        "images/portfolio/PersonalProjects/ADD/ADDLogo.png"
+      ],
+      "url": "https://band-wagon-studios.itch.io/a-discontinued-dream",
+      "technologies": [
+        {
+          "name": "Unreal 5",
+          "class": "unreal"
+        },
+        {
+          "name": "C++",
+          "class": "cplusplus"
+        },
+        {
+          "name": "Git",
+          "class": "git"
+        }
+      ]
+    },
     {
       "title": "Musical AI",
       "startDate": "C++",
