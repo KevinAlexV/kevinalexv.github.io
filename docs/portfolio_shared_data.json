@@ -34,6 +34,11 @@
           "level": "60"
         },
         {
+          "name": "Lua",
+          "class": "lua",
+          "level": "60"
+        },
+        {
           "name": "C++",
           "class": "cplusplus",
           "level": "70"
